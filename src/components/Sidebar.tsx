@@ -56,42 +56,46 @@ const fonts: Font[] = [
 
 const Sidebar = () => {
   const dispatch = useDispatch();
-  const { buttonColor, iconColor, font, isOpen } = useSelector(
+  const { buttonColor, font, isOpen } = useSelector(
     (state: RootState) => state.mode
   );
-  
+
   const [selectedColor, setSelectedColor] = useState(buttonColor);
   const [selectedFont, setSelectedFont] = useState(font);
   const [activeTab, setActiveTab] = useState("color");
 
   return (
     <div>
-      {/* Sidebar */}
+       
       <div
         className={`fixed top-0 right-0 h-screen w-72 bg-black text-white p-4 shadow-lg transition-transform duration-500 ease-in-out z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Button Group */}
+  
         <div className="flex space-x-2 mb-4">
-          <button 
-            className={`px-4 py-1 rounded ${activeTab === "font" ? "bg-blue-600" : "bg-gray-700"}`}
+          <button
+            className={`px-4 py-1 rounded ${
+              activeTab === "font" ? "bg-blue-600" : "bg-gray-700"
+            }`}
             onClick={() => setActiveTab("font")}
           >
             Font
           </button>
-          <button 
-            className={`px-4 py-1 rounded ${activeTab === "color" ? "bg-blue-600" : "bg-gray-700"}`}
+          <button
+            className={`px-4 py-1 rounded ${
+              activeTab === "color" ? "bg-blue-600" : "bg-gray-700"
+            }`}
             onClick={() => setActiveTab("color")}
           >
             Color
           </button>
         </div>
 
-        {/* Überschrift */}
+ 
         <h2 className="text-lg font-bold">Theme Settings</h2>
 
-        {/* Schriftartauswahl mit Scroll-Funktion */}
+ 
         {activeTab === "font" && (
           <div className="mt-2 max-h-[500px] overflow-y-auto  rounded-md p-2">
             {fonts.map((font) => (
@@ -102,13 +106,15 @@ const Sidebar = () => {
                 onClick={() => setSelectedFont(font.style)}
               >
                 {font.name}
-                {selectedFont === font.style && <Check className="text-green-400" size={18} />}
+                {selectedFont === font.style && (
+                  <Check className="text-green-400" size={18} />
+                )}
               </div>
             ))}
           </div>
         )}
 
-        {/* Farbauswahl */}
+  
         {activeTab === "color" && (
           <div className="mt-4 grid grid-cols-1 gap-2">
             {colors.map((color) => (
@@ -124,13 +130,15 @@ const Sidebar = () => {
                   ></span>
                   <span className="ml-2 text-white">{color.name}</span>
                 </div>
-                {selectedColor === color.hex && <Check className="text-green-400" size={18} />}
+                {selectedColor === color.hex && (
+                  <Check className="text-green-400" size={18} />
+                )}
               </div>
             ))}
           </div>
         )}
 
-        {/* Speichern-Button */}
+       
         <button
           onClick={() => {
             dispatch(setButtonColor(selectedColor));
@@ -144,12 +152,14 @@ const Sidebar = () => {
         </button>
       </div>
       <button
-          onClick={() => dispatch(toggleSidebar())}
-          className="fixed top-4 right-80 p-2  bg-gray-800 rounded-full hover:bg-gray-700 transition duration-300"
-          style={{ color: selectedColor }} 
-        >
-          {isOpen ? <CircleX size={32} /> : <Palette size={32} />}
-        </button>
+        onClick={() => dispatch(toggleSidebar())}
+        className={`fixed bottom-4 p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition-transform duration-500 ease-in-out ${
+          isOpen ? "right-72" : "right-4"
+        }`}
+        style={{ backgroundColor: buttonColor, color: "white" }}
+      >
+        {isOpen ? <CircleX size={32} /> : <Palette size={32} />}
+      </button>
     </div>
   );
 };

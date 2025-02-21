@@ -34,7 +34,7 @@ interface ModeState {
 
 const initialState: ModeState = {
   mode: "desktop",
-  buttonColor: themeColors.button ?? "#e5e7eb",
+  buttonColor: themeColors.button ?? "#FF4500",
   iconColor: themeColors.icon ?? "#000000",
   font: themeFonts.FONT_VIGA?.[0] ?? "Montserrat",
   isOpen: true,

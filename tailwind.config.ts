@@ -67,7 +67,7 @@ export default {
     },
   },
   variants: {
-    display: ["responsive", "print"], // ✅ Add print variant
+    display: ["responsive", "print"], 
   },
   plugins: [tailwindcssAnimate],
 };
