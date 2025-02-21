@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setMode } from "../feuture/reducers/modeSlice";
-import { RootState } from "../feuture/store";
+import { setMode } from "../feature/reducers/modeSlice";
+import { RootState } from "../feature/store";
 import { Monitor, Smartphone } from "lucide-react"; // Icons von Lucide
 
 const ModeToggle = () => {

@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
-import { RootState } from "./feuture/store";
+import { RootState } from "./feature/store";
 import ModeToggle from "./components/ModeToggle";
 import Sidebar from "./components/Sidebar";
 import { TriangleAlert } from "lucide-react";
 
 const Layout = () => {
-  const { mode, buttonColor, iconColor, font, } = useSelector((state: RootState) => state.mode);
+  const { mode, buttonColor, font, } = useSelector((state: RootState) => state.mode);
 
   return (
     <div  
@@ -19,7 +19,7 @@ const Layout = () => {
 
       <Sidebar />
 
-      <div className={`min-h-screen  transition-all duration-400 ${mode === "mobile" ? "bg-black mt-2 pt-2" : "bg-white "}`}>
+      <div className={`min-h-screen  transition-all duration-400 ${mode === "mobile" ? "bg-gray-600 mt-2 pt-2" : "bg-white "}`}>
         <div className={`${mode === "mobile" ? "w-[390px] mx-auto bg-white" : "max-w-[1600px] mx-auto"}`}>
           <main className="p-4">
             <h2 className="text-2xl font-bold">Hello World!</h2>  
@@ -30,7 +30,7 @@ const Layout = () => {
           <button style={{ backgroundColor: buttonColor, color: "white" }} className="px-4 py-2 rounded">
             Main Button
           </button>
-          <TriangleAlert style={{color:iconColor}} />
+          <TriangleAlert style={{color:buttonColor}} />
         </div>
       </div>
     </div>

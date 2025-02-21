@@ -5,8 +5,8 @@ import {
   setFont,
   saveSettings,
   toggleSidebar,
-} from "../feuture/reducers/modeSlice";
-import { RootState } from "../feuture/store/index";
+} from "../feature/reducers/modeSlice";
+import { RootState } from "../feature/store/index";
 import { useState } from "react";
 import { CircleX, Palette, Check } from "lucide-react";
 
