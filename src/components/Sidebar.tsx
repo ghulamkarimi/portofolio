@@ -17,7 +17,7 @@ interface Color {
 
 interface Font {
   name: string;
-  style: string;
+  style: string; // Hier muss eine gültige Tailwind-Klasse stehen!
 }
 
 const colors: Color[] = [
@@ -35,23 +35,23 @@ const colors: Color[] = [
 ];
 
 const fonts: Font[] = [
-  { name: "Dancing Script", style: "'Dancing Script', cursive" },
-  { name: "Pacifico", style: "'Pacifico', cursive" },
-  { name: "Great Vibes", style: "'Great Vibes', cursive" },
-  { name: "Sacramento", style: "'Sacramento', cursive" },
-  { name: "Lobster", style: "'Lobster', cursive" },
-  { name: "Parisienne", style: "'Parisienne', cursive" },
-  { name: "Satisfy", style: "'Satisfy', cursive" },
-  { name: "Allura", style: "'Allura', cursive" },
-  { name: "Tangerine", style: "'Tangerine', cursive" },
-  { name: "Homemade Apple", style: "'Homemade Apple', cursive" },
-  { name: "Courgette", style: "'Courgette', cursive" },
-  { name: "Norican", style: "'Norican', cursive" },
-  { name: "Marck Script", style: "'Marck Script', cursive" },
-  { name: "Italianno", style: "'Italianno', cursive" },
-  { name: "Delius", style: "'Delius', cursive" },
-  { name: "Bilbo Swash Caps", style: "'Bilbo Swash Caps', cursive" },
-  { name: "Arizonia", style: "'Arizonia', cursive" },
+  { name: "Dancing Script", style: "font-dancing" },
+  { name: "Pacifico", style: "font-pacifico" },
+  { name: "Great Vibes", style: "font-vibes" },
+  { name: "Sacramento", style: "font-sacramento" },
+  { name: "Lobster", style: "font-lobster" },
+  { name: "Parisienne", style: "font-parisienne" },
+  { name: "Satisfy", style: "font-satisfy" },
+  { name: "Allura", style: "font-allura" },
+  { name: "Tangerine", style: "font-tangerine" },
+  { name: "Homemade Apple", style: "font-homemade" },
+  { name: "Courgette", style: "font-courgette" },
+  { name: "Norican", style: "font-norican" },
+  { name: "Marck Script", style: "font-marck" },
+  { name: "Italianno", style: "font-italianno" },
+  { name: "Delius", style: "font-delius" },
+  { name: "Bilbo Swash Caps", style: "font-bilbo" },
+  { name: "Arizonia", style: "font-arizonia" },
 ];
 
 const Sidebar = () => {
@@ -66,13 +66,11 @@ const Sidebar = () => {
 
   return (
     <div>
-       
       <div
         className={`fixed top-0 right-0 h-screen w-72 bg-black text-white p-4 shadow-lg transition-transform duration-500 ease-in-out z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-  
         <div className="flex space-x-2 mb-4">
           <button
             className={`px-4 py-1 rounded ${
@@ -92,21 +90,18 @@ const Sidebar = () => {
           </button>
         </div>
 
- 
         <h2 className="text-lg font-bold">Theme Settings</h2>
 
- 
         {activeTab === "font" && (
-          <div className="mt-2 max-h-[500px] overflow-y-auto  rounded-md p-2">
-            {fonts.map((font) => (
+          <div className="mt-2 max-h-[500px] overflow-y-auto rounded-md p-2">
+            {fonts.map((f) => (
               <div
-                key={font.name}
-                className="p-2 cursor-pointer hover:bg-gray-700 flex justify-between"
-                style={{ fontFamily: font.style }}
-                onClick={() => setSelectedFont(font.style)}
+                key={f.name}
+                className={`p-2 cursor-pointer hover:bg-gray-700 flex justify-between ${f.style}`}
+                onClick={() => setSelectedFont(f.style)}
               >
-                {font.name}
-                {selectedFont === font.style && (
+                {f.name}
+                {selectedFont === f.style && (
                   <Check className="text-green-400" size={18} />
                 )}
               </div>
@@ -114,7 +109,6 @@ const Sidebar = () => {
           </div>
         )}
 
-  
         {activeTab === "color" && (
           <div className="mt-4 grid grid-cols-1 gap-2">
             {colors.map((color) => (
@@ -138,12 +132,12 @@ const Sidebar = () => {
           </div>
         )}
 
-       
         <button
           onClick={() => {
             dispatch(setButtonColor(selectedColor));
             dispatch(setIconColor(selectedColor));
-            dispatch(setFont(selectedFont));
+            dispatch(setFont(selectedFont)); 
+            localStorage.setItem("font", selectedFont);
             dispatch(saveSettings());
           }}
           className="mt-6 w-full bg-blue-600 text-white py-2 rounded"

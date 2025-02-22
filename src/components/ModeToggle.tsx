@@ -8,7 +8,7 @@ const ModeToggle = () => {
   const mode = useSelector((state: RootState) => state.mode.mode);
 
   return (
-    <div className="flex gap-4">
+    <div className="flex ">
       {/* Desktop Button */}
       <button
         onClick={() => dispatch(setMode("desktop"))}

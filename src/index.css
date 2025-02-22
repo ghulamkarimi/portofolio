@@ -5,5 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
- 
- 
+
+
+.btn {
+    @apply border-2 p-2 focus:outline-none rounded-xl text-white font-bold;
+}

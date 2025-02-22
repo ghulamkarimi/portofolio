@@ -34,9 +34,9 @@ interface ModeState {
 
 const initialState: ModeState = {
   mode: "desktop",
-  buttonColor: themeColors.button ?? "#FF4500",
-  iconColor: themeColors.icon ?? "#000000",
-  font: themeFonts.FONT_VIGA?.[0] ?? "Montserrat",
+  buttonColor: localStorage.getItem("buttonColor") || (themeColors.button ?? "#FF4500"),
+  iconColor: localStorage.getItem("iconColor") || (themeColors.icon ?? "#000000"),
+  font: localStorage.getItem("font") || "font-dancing", 
   isOpen: true,
   availableColors: Object.entries(themeColors).map(([key, value]) => ({
     name: key,
@@ -59,7 +59,7 @@ const modelSlice = createSlice({
       state.iconColor = action.payload;
     },
     setFont: (state, action: PayloadAction<string>) => {
-      state.font = action.payload;
+      state.font = action.payload; 
     },
     toggleSidebar: (state) => {
       state.isOpen = !state.isOpen;

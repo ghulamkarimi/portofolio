@@ -1,36 +1,72 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./feature/store";
 import ModeToggle from "./components/ModeToggle";
 import Sidebar from "./components/Sidebar";
-import { TriangleAlert } from "lucide-react";
+import { useEffect, useState } from "react";
+import MenuMobile from "./components/menu/MenuMobile";
+import Menu from "./components/menu/Menu";
+import { setMode } from "./feature/reducers/modeSlice"; // Redux Action
 
 const Layout = () => {
-  const { mode, buttonColor, font, } = useSelector((state: RootState) => state.mode);
+  const dispatch = useDispatch();
+  const { mode, font } = useSelector((state: RootState) => state.mode);
+
+
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 820);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newIsDesktop = window.innerWidth >= 820;
+
+      setIsDesktop(newIsDesktop);
+
+      
+      if (newIsDesktop && mode !== "desktop") {
+        dispatch(setMode("desktop"));
+      } else if (!newIsDesktop && mode !== "mobile") {
+        dispatch(setMode("mobile"));
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [mode, dispatch]);
+
+ 
+  useEffect(() => {
+    document.body.classList = font || "font-dancing"; 
+  }, [font]);
 
   return (
-    <div  
-     style={{ fontFamily: font }}>  
-      <div className={`${mode === "desktop" ? "border-b-2" : ""}`}>
-        <header className="flex justify-center gap-6 p-4">
-          <h1 className="text-xl font-bold">ai.webkraft</h1> 
-          <ModeToggle />
-        </header>
-      </div>
+    <div className={`${font || "font-dancing"} min-h-screen`}>
+      <header className={`${mode === "desktop" ? "flex justify-center gap-10 p-4 bg-white shadow-md":"hidden"}`}>
+        <h1 className="text-xl font-bold">ai.webkraft</h1>
+        <ModeToggle />
+     
+      </header>
+       <div className="border border-b-1"/>
 
       <Sidebar />
 
-      <div className={`min-h-screen  transition-all duration-400 ${mode === "mobile" ? "bg-gray-600 mt-2 pt-2" : "bg-white "}`}>
-        <div className={`${mode === "mobile" ? "w-[390px] mx-auto bg-white" : "max-w-[1600px] mx-auto"}`}>
-          <main className="p-4">
-            <h2 className="text-2xl font-bold">Hello World!</h2>  
-            <p className="text-lg">Welcome to the world of AI!</p>
+      <div
+        className={`min-h-screen transition-all duration-400 flex flex-col items-center ${
+          mode === "mobile" ? "bg-gray-600 pt-2" : "bg-white"
+        }`}
+      >
+        <div
+          className={`w-full ${
+            mode === "mobile"
+              ? "max-w-[390px] mx-auto bg-white"
+              : "max-w-[1600px] mx-auto"
+          } flex flex-col items-center`}
+        >
+          <main className="p-4 w-full">
+            {/* Menü-Anzeige mit Berücksichtigung von ModeToggle & Bildschirmbreite */}
+            <div className="w-full flex justify-center">
+              {mode === "desktop" ? <Menu /> : <MenuMobile />}
+            </div>
           </main>
-
-         
-          <button style={{ backgroundColor: buttonColor, color: "white" }} className="px-4 py-2 rounded">
-            Main Button
-          </button>
-          <TriangleAlert style={{color:buttonColor}} />
         </div>
       </div>
     </div>
