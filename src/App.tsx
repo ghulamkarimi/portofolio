@@ -1,53 +1,31 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "./feature/store";
 import ModeToggle from "./components/ModeToggle";
 import Sidebar from "./components/Sidebar";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import MenuMobile from "./components/menu/MenuMobile";
 import Menu from "./components/menu/Menu";
-import { setMode } from "./feature/reducers/modeSlice"; // Redux Action
 import Header from "./components/header/Header";
+import ResizeHandler from "./components/handleResize/ResizeHandler"; // Hier gehört es hin
 
 const Layout = () => {
-  const dispatch = useDispatch();
-  const { mode, font } = useSelector((state: RootState) => state.mode);
+  const { mode, font, isDesktop } = useSelector((state: RootState) => state.mode);
 
-
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 820);
-
-
-  useEffect(() => {
-    const handleResize = () => {
-      const newIsDesktop = window.innerWidth >= 820;
-
-      setIsDesktop(newIsDesktop);
-
-      
-      if (newIsDesktop && mode !== "desktop") {
-        dispatch(setMode("desktop"));
-      } else if (!newIsDesktop && mode !== "mobile") {
-        dispatch(setMode("mobile"));
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [mode, dispatch]);
-
- 
   useEffect(() => {
     document.body.classList.remove(...document.body.classList);
     document.body.classList.add(font || "font-dancing");
   }, [font]);
-  
+
   return (
     <div className={`${font || "font-dancing"} min-h-screen`}>
-      <header className={`${mode === "desktop" ? "flex justify-center gap-10 p-4 bg-white shadow-md":"hidden"}`}>
+      <ResizeHandler /> {/* WIRD NUR EINMAL GELADEN */}
+
+      <header className={`${isDesktop ? "flex justify-center gap-10 p-4 bg-white shadow-md" : "hidden"}`}>
         <h1 className="text-xl font-bold">ai.webkraft</h1>
         <ModeToggle />
-     
       </header>
-       <div className="border border-b-1"/>
+
+      <div className="border border-b-1" />
 
       <Sidebar />
 

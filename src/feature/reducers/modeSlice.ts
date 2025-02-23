@@ -24,6 +24,7 @@ const themeFonts: Record<string, any> =
 
 interface ModeState {
   mode: "desktop" | "mobile";
+  isDesktop: boolean;
   buttonColor: string;
   iconColor: string;
   font: string;
@@ -33,7 +34,8 @@ interface ModeState {
 }
 
 const initialState: ModeState = {
-  mode: "desktop",
+  mode: window.innerWidth >= 820 ? "desktop" : "mobile",
+  isDesktop: window.innerWidth >= 820,
   buttonColor: localStorage.getItem("buttonColor") || (themeColors.button ?? "#FF4500"),
   iconColor: localStorage.getItem("iconColor") || (themeColors.icon ?? "#000000"),
   font: localStorage.getItem("font") || "font-dancing", 
@@ -51,6 +53,10 @@ const modelSlice = createSlice({
   reducers: {
     setMode: (state, action: PayloadAction<"desktop" | "mobile">) => {
       state.mode = action.payload;
+    },
+    setIsDesktop: (state, action: PayloadAction<boolean>) => {
+      state.isDesktop = action.payload;
+      state.mode = action.payload ? "desktop" : "mobile"; 
     },
     setButtonColor: (state, action: PayloadAction<string>) => {
       state.buttonColor = action.payload;
@@ -74,6 +80,6 @@ const modelSlice = createSlice({
   },
 });
 
-export const { setMode, setButtonColor, setIconColor, setFont, saveSettings,toggleSidebar } =
+export const { setMode, setButtonColor, setIconColor, setFont, saveSettings,toggleSidebar,setIsDesktop } =
   modelSlice.actions;
 export default modelSlice.reducer;
