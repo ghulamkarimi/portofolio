@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../feature/store";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Menu = () => {
   const { buttonColor } = useSelector((state: RootState) => state.mode);
+  const navigate = useNavigate()
   return (
     <div className="w-full">
       <div className="flex item-center justify-center gap-20 p-4">
@@ -23,7 +24,9 @@ const Menu = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-        <button className="btn" style={{ backgroundColor: buttonColor }}>
+        <button
+        onClick={() => navigate("/contact")}
+         className="btn" style={{ backgroundColor: buttonColor }}>
           Contact us
         </button>
       </div>

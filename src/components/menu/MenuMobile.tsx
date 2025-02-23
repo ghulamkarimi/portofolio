@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X, AlignJustify } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const MenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +33,17 @@ const MenuMobile = () => {
       >
         <ul className="mt-4 space-y-4 text-center text-lg font-medium">
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            About
+           <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            Portfolio
+            <NavLink to="/about">About</NavLink>
           </li>
+          
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            Contact
+            <NavLink to="/portfolio">Portfolio</NavLink>
+          </li>  
+          <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>

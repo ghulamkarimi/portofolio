@@ -1,22 +1,26 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../feature/store";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const { isDesktop } = useSelector((state: RootState) => state.mode);
   return (
     <footer className=" text-white bg-black px-6 py-8 md:px-12 lg:px-32">
       {/* Navigation */}
-      <div className="flex justify-center space-x-6 text-sm">
-        <a href="#about" className="hover:underline">
-          About
-        </a>
-        <a href="#portfolio" className="hover:underline">
-          Portfolio
-        </a>
-        <a href="#contact" className="hover:underline">
-          Contact
-        </a>
-      </div>
+      <ul className="flex justify-center space-x-6 text-sm">
+        <li className="hover:underline">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="hover:underline">
+          <NavLink to="/about">About</NavLink>
+        </li>
+        <li className="hover:underline">
+          <NavLink to="/portfolio">Portfolio</NavLink>
+        </li>
+        <li className="hover:underline">
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
+      </ul>
 
       {/* Trennlinie */}
       <div className="border-t border-gray-300 my-6"></div>

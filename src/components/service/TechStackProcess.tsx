@@ -1,6 +1,7 @@
 import { Code, Settings, CheckCircle, Rocket, Database, GitBranch } from "lucide-react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../feature/store";
+import { useNavigate } from "react-router-dom";
 
 const techStack = {
   languages: ["JavaScript", "TypeScript"],
@@ -15,6 +16,7 @@ const TechStackProcess = () => {
   const { buttonColor, isDesktop } = useSelector(
     (state: RootState) => state.mode
   );
+  const navigate = useNavigate();
 
   const processSteps = [
     {
@@ -111,6 +113,7 @@ const TechStackProcess = () => {
       {/* Button für Portfolio */}
       <div className="text-center mt-6">
         <button
+        onClick={() => navigate("/portfolio")}
           style={{ backgroundColor: buttonColor }}
           className="btn rounded-lg shadow-lg text-white px-6 py-3"
         >
