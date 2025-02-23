@@ -11,6 +11,7 @@ import AboutSection from "./components/about/AboutSection";
 import ServicesSection from "./components/service/ServiceSection";
 import ProjectsSection from "./components/service/ProjectSection";
 import TechStackProcess from "./components/service/TechStackProcess";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   const { mode, font, isDesktop } = useSelector(
@@ -50,7 +51,7 @@ const Layout = () => {
           } flex flex-col items-center`}
         >
           <main className=" m-4 w-full">
-            {/* Menü-Anzeige mit Berücksichtigung von ModeToggle & Bildschirmbreite */}
+          
             <div className="w-full flex justify-center">
               {mode === "desktop" ? <Menu /> : <MenuMobile />}
             </div>
@@ -65,10 +66,13 @@ const Layout = () => {
 
             <ProjectsSection />
 
-          <TechStackProcess />
-
+            <TechStackProcess />
+            <footer>
+          <Footer />
+        </footer>
           </main>
         </div>
+       
       </div>
     </div>
   );
