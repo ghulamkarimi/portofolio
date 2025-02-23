@@ -14,7 +14,7 @@ export const fadeIn = (direction: string | number, delay: number) => {
             transition: {
                 // Übergangseigenschaften
                 type: "tween", // Art des Übergangs
-                duration: 1.5, // Dauer des Übergangs in Sekunden
+                duration: 2.5, // Dauer des Übergangs in Sekunden
                 delay: delay, // Verzögerung des Übergangs in Sekunden
                 ease: [0.25, 0.25, 0.25, 0.75] // Easing-Funktion für den Übergang
             }
