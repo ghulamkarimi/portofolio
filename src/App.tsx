@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import MenuMobile from "./components/menu/MenuMobile";
 import Menu from "./components/menu/Menu";
 import { setMode } from "./feature/reducers/modeSlice"; // Redux Action
+import Header from "./components/header/Header";
 
 const Layout = () => {
   const dispatch = useDispatch();
@@ -35,9 +36,10 @@ const Layout = () => {
 
  
   useEffect(() => {
-    document.body.classList = font || "font-dancing"; 
+    document.body.classList.remove(...document.body.classList);
+    document.body.classList.add(font || "font-dancing");
   }, [font]);
-
+  
   return (
     <div className={`${font || "font-dancing"} min-h-screen`}>
       <header className={`${mode === "desktop" ? "flex justify-center gap-10 p-4 bg-white shadow-md":"hidden"}`}>
@@ -65,6 +67,10 @@ const Layout = () => {
             {/* Menü-Anzeige mit Berücksichtigung von ModeToggle & Bildschirmbreite */}
             <div className="w-full flex justify-center">
               {mode === "desktop" ? <Menu /> : <MenuMobile />}
+            </div>
+
+            <div>
+              <Header />
             </div>
           </main>
         </div>

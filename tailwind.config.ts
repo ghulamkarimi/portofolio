@@ -5,6 +5,13 @@ export default {
   darkMode: ["class", "media"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   safelist: [
+    "font-roboto",
+    "font-poppins",
+    "font-montserrat",
+    "font-inter",
+    "font-raleway",
+    "font-lato",
+    
     "font-dancing",
     "font-pacifico",
     "font-vibes",
@@ -24,12 +31,20 @@ export default {
     "font-arizonia"
   ],
   
+  
   theme: {
     container: {
       center: true,
     },
     extend: {
       fontFamily: {
+        sans: ["Roboto", "sans-serif"], // Moderne und gut lesbare Schrift
+        poppins: ["Poppins", "sans-serif"], // Sehr beliebt für Webdesign
+        montserrat: ["Montserrat", "sans-serif"], // Klare und professionelle Optik
+        inter: ["Inter", "sans-serif"], // Perfekt für UI & modernes Design
+        raleway: ["Raleway", "sans-serif"], // Elegante Schrift mit Charakter
+        lato: ["Lato", "sans-serif"], // Weich und professionell
+        
         dancing: ["Dancing Script", "cursive"],
         pacifico: ["Pacifico", "cursive"],
         vibes: ["Great Vibes", "cursive"],
@@ -48,6 +63,7 @@ export default {
         bilbo: ["Bilbo Swash Caps", "cursive"],
         arizonia: ["Arizonia", "cursive"],
       },
+      
       
       borderRadius: {
         lg: "var(--radius)",

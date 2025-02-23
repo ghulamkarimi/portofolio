@@ -35,6 +35,13 @@ const colors: Color[] = [
 ];
 
 const fonts: Font[] = [
+  { name: "Roboto", style: "font-roboto" },
+  { name: "Poppins", style: "font-poppins" },
+  { name: "Montserrat", style: "font-montserrat" },
+  { name: "Inter", style: "font-inter" },
+  { name: "Raleway", style: "font-raleway" },
+  { name: "Lato", style: "font-lato" },
+
   { name: "Dancing Script", style: "font-dancing" },
   { name: "Pacifico", style: "font-pacifico" },
   { name: "Great Vibes", style: "font-vibes" },
@@ -53,6 +60,7 @@ const fonts: Font[] = [
   { name: "Bilbo Swash Caps", style: "font-bilbo" },
   { name: "Arizonia", style: "font-arizonia" },
 ];
+
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -89,9 +97,7 @@ const Sidebar = () => {
             Color
           </button>
         </div>
-
         <h2 className="text-lg font-bold">Theme Settings</h2>
-
         {activeTab === "font" && (
           <div className="mt-2 max-h-[500px] overflow-y-auto rounded-md p-2">
             {fonts.map((f) => (
@@ -104,11 +110,13 @@ const Sidebar = () => {
                 {selectedFont === f.style && (
                   <Check className="text-green-400" size={18} />
                 )}
+                 
               </div>
             ))}
+                
           </div>
         )}
-
+  
         {activeTab === "color" && (
           <div className="mt-4 grid grid-cols-1 gap-2">
             {colors.map((color) => (
@@ -131,13 +139,11 @@ const Sidebar = () => {
             ))}
           </div>
         )}
-
         <button
           onClick={() => {
             dispatch(setButtonColor(selectedColor));
             dispatch(setIconColor(selectedColor));
-            dispatch(setFont(selectedFont)); 
-            localStorage.setItem("font", selectedFont);
+            dispatch(setFont(selectedFont));
             dispatch(saveSettings());
           }}
           className="mt-6 w-full bg-blue-600 text-white py-2 rounded"
