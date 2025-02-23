@@ -5,15 +5,11 @@ import Sidebar from "./components/Sidebar";
 import { useEffect } from "react";
 import MenuMobile from "./components/menu/MenuMobile";
 import Menu from "./components/menu/Menu";
-import Header from "./components/header/Header";
 import ResizeHandler from "./components/handleResize/ResizeHandler"; // Hier gehört es hin
-import AboutSection from "./components/about/AboutSection";
-import ServicesSection from "./components/service/ServiceSection";
-import ProjectsSection from "./components/service/ProjectSection";
-import TechStackProcess from "./components/service/TechStackProcess";
 import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+const App = () => {
   const { mode, font, isDesktop } = useSelector(
     (state: RootState) => state.mode
   );
@@ -55,21 +51,12 @@ const Layout = () => {
             <div className="w-full flex justify-center">
               {mode === "desktop" ? <Menu /> : <MenuMobile />}
             </div>
-
             <div>
-              <Header />
+              <Outlet />  
             </div>
-
-            <AboutSection />
-
-            <ServicesSection />
-
-            <ProjectsSection />
-
-            <TechStackProcess />
-            <footer>
+            
           <Footer />
-        </footer>
+       
           </main>
         </div>
        
@@ -78,4 +65,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default App;

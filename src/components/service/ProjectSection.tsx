@@ -41,16 +41,9 @@ const ProjectsSection = () => {
   );
   return (
     <section
-      className={`bg-black text-white py-12 ${isDesktop ? "md:px-12" : "px-4"}`}
+      className={`bg-black text-white py-12 ${isDesktop ? "md:px-16" : "px-4"}`}
     >
-      {/* Hero Image */}
-      <div className="relative">
-        <img
-          src="/main2.webp"
-          alt="Portfolio showcase"
-          className="w-full max-h-[500px] object-cover  rounded-xl shadow-lg"
-        />
-      </div>
+      <div className="relative w-full h-[500px] bg-[url('/main2.webp')] bg-cover bg-center rounded-xl shadow-lg"></div>
 
       {/* Titel & Beschreibung */}
       <div className="max-w-5xl mx-auto text-center mt-8">

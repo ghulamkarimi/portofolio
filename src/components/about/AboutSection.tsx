@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className={`px-6 py-12  text-gray-900 ${isDesktop ? "md:px-12" : "px-6"}`}>
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">About ai.webkraft</h2>
+        <h2 className="text-3xl font-bold mb-4">ai.webkraft</h2>
         <p className="text-lg">
           At <span className="font-semibold">ai.webkraft</span>, we specialize in delivering high-quality web development solutions 
           that empower businesses and create exceptional user experiences. Our team is committed to innovation and collaboration.

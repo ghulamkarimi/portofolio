@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../feature/store";
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   const { buttonColor } = useSelector((state: RootState) => state.mode);
@@ -10,16 +11,16 @@ const Menu = () => {
 
         <ul className="flex gap-4  items-center p-4 font-bold">
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            Home
+       <NavLink to="/">Home</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            About
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            Portfolio
+            <NavLink to="/portfolio">Portfolio</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            Contact
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <button className="btn" style={{ backgroundColor: buttonColor }}>
