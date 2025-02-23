@@ -7,9 +7,9 @@ const MenuMobile = () => {
   return (
     <div className="relative w-full">
       {/* Navbar */}
-      <div className="flex items-center justify-between w-full p-4 bg-white shadow-md">
+      <div className="flex items-center justify-between w-full px-4 bg-white shadow-md">
         {/* Logo */}
-        <h1 className="text-center text-3xl font-bold">DevCraft</h1>
+        <h1 className="text-center text-3xl font-bold">ai.webkraft</h1>
 
         {/* Menü-Button mit Animation */}
         <button

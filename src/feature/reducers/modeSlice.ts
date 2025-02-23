@@ -34,12 +34,12 @@ interface ModeState {
 }
 
 const initialState: ModeState = {
-  mode: window.innerWidth >= 820 ? "desktop" : "mobile",
-  isDesktop: window.innerWidth >= 820,
+  mode: window.innerWidth >= 768 ? "desktop" : "mobile",
+  isDesktop: window.innerWidth >= 768,
   buttonColor: localStorage.getItem("buttonColor") || (themeColors.button ?? "#FF4500"),
   iconColor: localStorage.getItem("iconColor") || (themeColors.icon ?? "#000000"),
   font: localStorage.getItem("font") || "font-dancing", 
-  isOpen: true,
+  isOpen: false,
   availableColors: Object.entries(themeColors).map(([key, value]) => ({
     name: key,
     hex: typeof value === "string" ? value : "#000000",

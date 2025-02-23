@@ -7,9 +7,15 @@ import MenuMobile from "./components/menu/MenuMobile";
 import Menu from "./components/menu/Menu";
 import Header from "./components/header/Header";
 import ResizeHandler from "./components/handleResize/ResizeHandler"; // Hier gehört es hin
+import AboutSection from "./components/about/AboutSection";
+import ServicesSection from "./components/service/ServiceSection";
+import ProjectsSection from "./components/service/ProjectSection";
+import TechStackProcess from "./components/service/TechStackProcess";
 
 const Layout = () => {
-  const { mode, font, isDesktop } = useSelector((state: RootState) => state.mode);
+  const { mode, font, isDesktop } = useSelector(
+    (state: RootState) => state.mode
+  );
 
   useEffect(() => {
     document.body.classList.remove(...document.body.classList);
@@ -19,19 +25,21 @@ const Layout = () => {
   return (
     <div className={`${font || "font-dancing"} min-h-screen`}>
       <ResizeHandler /> {/* WIRD NUR EINMAL GELADEN */}
-
-      <header className={`${isDesktop ? "flex justify-center gap-10 p-4 bg-white shadow-md" : "hidden"}`}>
+      <header
+        className={`${
+          isDesktop
+            ? "flex justify-center gap-10 p-4 bg-white shadow-md"
+            : "hidden"
+        }`}
+      >
         <h1 className="text-xl font-bold">ai.webkraft</h1>
         <ModeToggle />
       </header>
-
       <div className="border border-b-1" />
-
       <Sidebar />
-
       <div
         className={`min-h-screen transition-all duration-400 flex flex-col items-center ${
-          mode === "mobile" ? "bg-gray-600 pt-2" : "bg-white"
+          mode === "mobile" ? "bg-gray-300 " : "bg-white"
         }`}
       >
         <div
@@ -41,7 +49,7 @@ const Layout = () => {
               : "max-w-[1600px] mx-auto"
           } flex flex-col items-center`}
         >
-          <main className="p-4 w-full">
+          <main className=" m-4 w-full">
             {/* Menü-Anzeige mit Berücksichtigung von ModeToggle & Bildschirmbreite */}
             <div className="w-full flex justify-center">
               {mode === "desktop" ? <Menu /> : <MenuMobile />}
@@ -50,6 +58,15 @@ const Layout = () => {
             <div>
               <Header />
             </div>
+
+            <AboutSection />
+
+            <ServicesSection />
+
+            <ProjectsSection />
+
+          <TechStackProcess />
+
           </main>
         </div>
       </div>

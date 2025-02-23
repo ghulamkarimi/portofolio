@@ -7,7 +7,7 @@ const ResizeHandler = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const newIsDesktop = window.innerWidth >= 820;
+      const newIsDesktop = window.innerWidth >= 768;
       dispatch(setIsDesktop(newIsDesktop));
       dispatch(setMode(newIsDesktop ? "desktop" : "mobile"));
     };

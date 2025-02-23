@@ -7,5 +7,5 @@
 
 
 .btn {
-    @apply border-2 py-1 px-2 focus:outline-none rounded-xl text-white font-bold;
+    @apply border-2 py-2 px-2 focus:outline-none rounded-xl text-white font-bold;
 }
