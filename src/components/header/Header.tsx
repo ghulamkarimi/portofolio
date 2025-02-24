@@ -89,7 +89,7 @@ const Header = () => {
           }`}
         >
           <input
-            className="w-72 p-2 border rounded-lg"
+            className="w-60 p-2 border rounded-lg"
             placeholder={t("emailPlaceholder")}
             type="email"
           />
