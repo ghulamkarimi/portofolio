@@ -28,7 +28,7 @@ const LanguageSwitcher = () => {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center px-4 gap-3 py-2 bg-white border rounded-lg shadow-md cursor-pointer text-lg hover:bg-gray-100 transition duration-200"
+        className="flex items-center px-4 gap-2 py-2 bg-white border rounded-lg shadow-md cursor-pointer text-lg hover:bg-gray-100 transition duration-200"
       >
         <img
           src={languages.find((l) => l.code === i18n.language)?.flag || "/flags/en.png"}
