@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { X, AlignJustify } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../toggleLanguage/LanguageSwitcher";
 
 const MenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { lang } = useParams();
+  const { t } = useTranslation();
 
   return (
     <div className="relative w-full">
@@ -11,7 +15,7 @@ const MenuMobile = () => {
       <div className="flex items-center justify-between w-full px-4 bg-white shadow-md">
         {/* Logo */}
         <h1 className="text-center text-3xl font-bold">ai.webkraft</h1>
-
+        <LanguageSwitcher />
         {/* Menü-Button mit Animation */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -33,18 +37,21 @@ const MenuMobile = () => {
       >
         <ul className="mt-4 space-y-4 text-center text-lg font-medium">
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-           <NavLink to="/">Home</NavLink>
+          <NavLink to={`/${lang}/`}>{t("menu.home")}</NavLink>
           </li>
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            <NavLink to="/about">About</NavLink>
+          <NavLink to={`/${lang}/about`}>{t("menu.about")}</NavLink>
           </li>
           
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to={`/${lang}/portfolio`}>{t("menu.portfolio")}</NavLink>
           </li>  
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
-            <NavLink to="/contact">Contact</NavLink>
+          <NavLink to={`/${lang}/contact`}>{t("menu.contact")}</NavLink>
           </li>
+
+          
+
         </ul>
       </div>
     </div>

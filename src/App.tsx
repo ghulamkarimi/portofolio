@@ -7,12 +7,25 @@ import MenuMobile from "./components/menu/MenuMobile";
 import Menu from "./components/menu/Menu";
 import ResizeHandler from "./components/handleResize/ResizeHandler"; // Hier gehört es hin
 import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet,useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
   const { mode, font, isDesktop } = useSelector(
     (state: RootState) => state.mode
   );
+
+  const { lang } = useParams();
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    if (lang && ["en", "de", "fa", "ar"].includes(lang)) {
+      i18n.changeLanguage(lang); // Sprache setzen
+      document.documentElement.lang = lang; // HTML <lang>-Attribut setzen
+      document.documentElement.dir = lang === "fa" || lang === "ar" ? "rtl" : "ltr"; // RTL für Arabisch & Farsi aktivieren
+      localStorage.setItem("language", lang); // Sprache speichern
+    }
+  }, [lang, i18n]);
 
   useEffect(() => {
     document.body.classList.remove(...document.body.classList);

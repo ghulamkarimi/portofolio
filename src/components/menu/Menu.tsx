@@ -1,34 +1,44 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../feature/store";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../toggleLanguage/LanguageSwitcher";
 
 const Menu = () => {
   const { buttonColor } = useSelector((state: RootState) => state.mode);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const { lang } = useParams();
+  const { t } = useTranslation(); // useTranslation Hook für Mehrsprachigkeit
+
   return (
     <div className="w-full">
-      <div className="flex item-center justify-center gap-20 p-4">
+      <div className="flex items-center justify-center gap-20 p-4">
         <h1 className="text-4xl font-bold">ai.webkraft</h1>
 
-        <ul className="flex gap-4  items-center p-4 font-bold">
+        <ul className="flex gap-4 items-center p-4 font-bold">
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-       <NavLink to="/">Home</NavLink>
+            <NavLink to={`/${lang}/`}>{t("menu.home")}</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            <NavLink to="/about">About</NavLink>
+            <NavLink to={`/${lang}/about`}>{t("menu.about")}</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            <NavLink to="/portfolio">Portfolio</NavLink>
+            <NavLink to={`/${lang}/portfolio`}>{t("menu.portfolio")}</NavLink>
           </li>
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to={`/${lang}/contact`}>{t("menu.contact")}</NavLink>
           </li>
         </ul>
+
         <button
-        onClick={() => navigate("/contact")}
-         className="btn" style={{ backgroundColor: buttonColor }}>
-          Contact us
+          onClick={() => navigate(`/${lang}/contact`)}
+          className="btn"
+          style={{ backgroundColor: buttonColor }}
+        >
+          {t("menu.contactUs")}
         </button>
+
+        <LanguageSwitcher />
       </div>
       <div className="border border-b-1" />
     </div>

@@ -1,0 +1,129 @@
+{
+    "titlePart1": "Transform Your",
+    "titlePart2": "Vision",
+    "titlePart3": "into Reality",
+    "description": "At ai.webkraft, we specialize in creating innovative and responsive web solutions tailored to your needs. With expertise in Next.js, React, TypeScript, mongoDB and SQL, we build high-performance applications that seamlessly integrate backend and frontend. We are also passionate about AI and Python, leveraging cutting-edge technology for automation and intelligent solutions. Our goal is to deliver engaging, secure, and scalable digital experiences that align with your business objectives. Let's build something exceptional together!",
+    "emailPlaceholder": "Enter your email",
+    "signupButton": "Sign up",
+    "termsMessage": "By signing up, you agree to our",
+    "termsConditions": "Terms and Conditions",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "contactUs": "Contact"
+    },
+    "about": {
+        "title": "ai.webkraft",
+        "description": "At ai.webkraft, we specialize in delivering high-quality web development solutions that empower businesses and create exceptional user experiences. Our team is committed to innovation and collaboration.",
+        "missionTitle": "Our Mission",
+        "missionDescription": "We provide tailored web solutions that help businesses grow and enhance their digital presence.",
+        "valuesTitle": "Our Values",
+        "valuesDescription": "Our core values include Innovation, Quality, Collaboration, and Integrity. These principles guide our work and ensure the highest standards in every project.",
+        "teamTitle": "Meet the Team",
+        "teamDescription": "Our talented team consists of experienced developers and designers who create modern, functional web solutions."
+    },
+    "services": {
+        "customWebsiteDesign": {
+            "title": "Custom Website Design",
+            "description": "We specialize in creating visually appealing and functional websites tailored to your brand's identity and goals."
+        },
+        "applicationDevelopment": {
+            "title": "Application Development",
+            "description": "Our team develops robust applications that enhance user engagement and streamline business operations across various platforms."
+        },
+        "ecommerceSolutions": {
+            "title": "E-commerce Solutions",
+            "description": "We offer comprehensive e-commerce solutions, ensuring secure transactions and a seamless shopping experience for your customers."
+        },
+        "responsiveDesign": {
+            "title": "Responsive Design",
+            "description": "We ensure your website looks great and functions perfectly on all devices, providing an optimal user experience everywhere."
+        }
+    },
+    "projects": {
+        "title": "Our Projects",
+        "description": "Explore our diverse portfolio that showcases our expertise in web development, from e-commerce solutions to stunning personal websites.",
+        "list": [
+            {
+                "name": "Fashionista Co.",
+                "type": "E-commerce Website"
+            },
+            {
+                "name": "John Doe Photography",
+                "type": "Portfolio Website"
+            },
+            {
+                "name": "Tech Innovators Inc.",
+                "type": "Corporate Website"
+            }
+        ],
+        "categories": [
+            {
+                "title": "E-commerce",
+                "subcategories": [
+                    "Fashion"
+                ]
+            },
+            {
+                "title": "Corporate",
+                "subcategories": [
+                    "Tech Startup"
+                ]
+            },
+            {
+                "title": "Photography",
+                "subcategories": [
+                    "Portfolio"
+                ]
+            },
+            {
+                "title": "Innovative",
+                "subcategories": [
+                    "Solutions"
+                ]
+            }
+        ]
+    },
+    "techStack": {
+        "title": "Technology Stack",
+        "description": "We rely on modern and powerful technologies to deliver high-quality web solutions.",
+        "languages": "Languages",
+        "frameworks": "Frameworks",
+        "additionalTechnologies": "Additional Technologies",
+        "portfolioButton": "View Portfolio",
+        "processTitle": "Our Web Development Process",
+        "processDescription": "A structured approach for top-tier results – from the initial consultation to the final launch.",
+        "processSteps": [
+            {
+                "step": "1. Discovery & Planning",
+                "description": "We start with a thorough analysis of your vision, goals, and target audience. During this phase, we define the project scope and create a detailed roadmap."
+            },
+            {
+                "step": "2. Design & Prototyping",
+                "description": "We create wireframes and interactive prototypes to visualize the user experience and functionality. This iterative process ensures an intuitive design."
+            },
+            {
+                "step": "3. Development & Testing",
+                "description": "Our developers implement your project using the latest technologies. Through extensive testing, we ensure a smooth and error-free user experience."
+            },
+            {
+                "step": "4. Deployment & Launch",
+                "description": "After successful testing, your website goes live. We provide ongoing support and maintenance to ensure optimal performance."
+            }
+        ]
+    },
+    "footer": {
+        "home": "Home",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "terms": "Terms and Conditions",
+        "privacy": "Privacy Policy",
+        "copyright": "© 2025 ai.webkraft. All rights reserved."
+    }
+}

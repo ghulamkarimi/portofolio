@@ -1,44 +1,23 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../feature/store";
-
-const projects = [
-  {
-    name: "Fashionista Co.",
-    type: "E-commerce Website",
-  },
-  {
-    name: "John Doe Photography",
-    type: "Portfolio Website",
-  },
-  {
-    name: "Tech Innovators Inc.",
-    type: "Corporate Website",
-  },
-];
-
-const categories = [
-  {
-    title: "E-commerce",
-    subcategories: ["Fashion"],
-  },
-  {
-    title: "Corporate",
-    subcategories: ["Tech Startup"],
-  },
-  {
-    title: "Photography",
-    subcategories: ["Portfolio"],
-  },
-  {
-    title: "Innovative",
-    subcategories: ["Solutions"],
-  },
-];
+import { useTranslation } from "react-i18next"; // Import i18next
 
 const ProjectsSection = () => {
   const { isDesktop, buttonColor } = useSelector(
     (state: RootState) => state.mode
   );
+  const { t } = useTranslation(); // useTranslation Hook für Mehrsprachigkeit
+
+  // Projekte & Kategorien aus `i18next` holen
+  const projects = t("projects.list", { returnObjects: true }) as {
+    name: string;
+    type: string;
+  }[];
+  const categories = t("projects.categories", { returnObjects: true }) as {
+    title: string;
+    subcategories: string[];
+  }[];
+
   return (
     <section
       className={`bg-black text-white py-12 ${isDesktop ? "md:px-16" : "px-4"}`}
@@ -47,11 +26,8 @@ const ProjectsSection = () => {
 
       {/* Titel & Beschreibung */}
       <div className="max-w-5xl mx-auto text-center mt-8">
-        <h2 className="text-3xl font-bold mb-4">Our Projects</h2>
-        <p className="text-lg text-gray-400">
-          Explore our diverse portfolio that showcases our expertise in web
-          development, from e-commerce solutions to stunning personal websites.
-        </p>
+        <h2 className="text-3xl font-bold mb-4">{t("projects.title")}</h2>
+        <p className="text-lg text-gray-400">{t("projects.description")}</p>
       </div>
 
       {/* Projekte Liste */}
@@ -67,7 +43,7 @@ const ProjectsSection = () => {
       {/* Kategorien */}
       <div
         className={`${
-          isDesktop ? "grid grid-cols-4" : "grid grid-cols-2 "
+          isDesktop ? "grid grid-cols-4" : "grid grid-cols-2"
         } gap-8 mt-12 text-gray-300`}
       >
         {categories.map((category, index) => (
@@ -76,9 +52,7 @@ const ProjectsSection = () => {
               {category.title}
             </h3>
             {category.subcategories.map((sub, idx) => (
-              <p key={idx} className="text-gray-400">
-                {sub}
-              </p>
+              <p key={idx} className="text-gray-400">{sub}</p>
             ))}
           </div>
         ))}
