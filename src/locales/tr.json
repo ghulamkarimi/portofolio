@@ -1,0 +1,121 @@
+{
+    "titlePart1": "Dönüştürün",
+    "titlePart2": "Vizyonunuzu",
+    "titlePart3": "Gerçeğe",
+    "description": "Ai.webkraft olarak, ihtiyaçlarınıza özel yenilikçi ve duyarlı web çözümleri oluşturmada uzmanız. Next.js, React, TypeScript, MongoDB ve SQL konularında uzmanlaşarak, arka uç ve ön ucu sorunsuz bir şekilde entegre eden yüksek performanslı uygulamalar geliştiriyoruz. Ayrıca, yapay zeka (AI) ve Python konusunda tutkuluyuz ve en son teknolojileri otomasyon ve akıllı çözümler için kullanıyoruz. Hedefimiz, iş hedeflerinizle uyumlu, etkileyici, güvenli ve ölçeklenebilir dijital deneyimler sunmaktır. Gelin, birlikte olağanüstü bir şey yaratalım!",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "signupButton": "Kaydol",
+    "termsMessage": "Kaydolarak şu şartları kabul etmiş olursunuz:",
+    "termsConditions": "Kullanım Koşulları",
+    "and": "ve",
+    "privacyPolicy": "Gizlilik Politikası",
+    "menu": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "services": "Hizmetler",
+        "portfolio": "Portföy",
+        "contact": "İletişim",
+        "contactUs": "Bize Ulaşın"
+    },
+    "about": {
+        "title": "ai.webkraft",
+        "description": "Ai.webkraft olarak, işletmeleri güçlendiren ve olağanüstü kullanıcı deneyimleri sunan yüksek kaliteli web geliştirme çözümleri sunmaya odaklanıyoruz. Ekibimiz, yenilikçilik ve iş birliğine kendini adamıştır.",
+        "missionTitle": "Misyonumuz",
+        "missionDescription": "İşletmelerin büyümesine ve dijital varlıklarını güçlendirmesine yardımcı olacak özel web çözümleri sağlıyoruz.",
+        "valuesTitle": "Değerlerimiz",
+        "valuesDescription": "Temel değerlerimiz arasında Yenilikçilik, Kalite, İş Birliği ve Dürüstlük bulunmaktadır. Bu ilkeler çalışmalarımıza rehberlik eder ve her projede en yüksek standartları sağlar.",
+        "teamTitle": "Ekibimizle Tanışın",
+        "teamDescription": "Deneyimli geliştiriciler ve tasarımcılardan oluşan yetenekli ekibimiz, modern ve işlevsel web çözümleri üretmektedir."
+    },
+    "services": {
+        "customWebsiteDesign": {
+            "title": "Özel Web Tasarımı",
+            "description": "Markanızın kimliğine ve hedeflerine uygun, görsel olarak etkileyici ve işlevsel web siteleri tasarlama konusunda uzmanız."
+        },
+        "applicationDevelopment": {
+            "title": "Uygulama Geliştirme",
+            "description": "Ekibimiz, kullanıcı etkileşimini artıran ve iş süreçlerini kolaylaştıran sağlam uygulamalar geliştirmektedir."
+        },
+        "ecommerceSolutions": {
+            "title": "E-Ticaret Çözümleri",
+            "description": "Güvenli işlemler ve müşterileriniz için sorunsuz bir alışveriş deneyimi sağlayan kapsamlı e-ticaret çözümleri sunuyoruz."
+        },
+        "responsiveDesign": {
+            "title": "Duyarlı Tasarım",
+            "description": "Web sitenizin tüm cihazlarda harika görünmesini ve mükemmel çalışmasını sağlayarak en iyi kullanıcı deneyimini sunuyoruz."
+        }
+    },
+    "projects": {
+        "title": "Projelerimiz",
+        "description": "E-ticaret çözümlerinden çarpıcı kişisel web sitelerine kadar, web geliştirme konusundaki uzmanlığımızı sergileyen çeşitli portföyümüzü keşfedin.",
+        "list": [
+            {
+                "name": "Fashionista Co.",
+                "type": "E-Ticaret Web Sitesi"
+            },
+            {
+                "name": "John Doe Photography",
+                "type": "Portföy Web Sitesi"
+            },
+            {
+                "name": "Tech Innovators Inc.",
+                "type": "Kurumsal Web Sitesi"
+            }
+        ],
+        "categories": [
+            {
+                "title": "E-Ticaret",
+                "subcategories": ["Moda"]
+            },
+            {
+                "title": "Kurumsal",
+                "subcategories": ["Teknoloji Girişimi"]
+            },
+            {
+                "title": "Fotoğrafçılık",
+                "subcategories": ["Portföy"]
+            },
+            {
+                "title": "Yenilikçi",
+                "subcategories": ["Çözümler"]
+            }
+        ]
+    },
+    "techStack": {
+        "title": "Teknoloji Yığını",
+        "description": "Yüksek kaliteli web çözümleri sunmak için modern ve güçlü teknolojilere güveniyoruz.",
+        "languages": "Diller",
+        "frameworks": "Çatılar",
+        "additionalTechnologies": "Ek Teknolojiler",
+        "portfolioButton": "Portföyü Görüntüle",
+        "processTitle": "Web Geliştirme Sürecimiz",
+        "processDescription": "İlk danışmadan nihai yayına kadar en iyi sonuçları almak için yapılandırılmış bir yaklaşım.",
+        "processSteps": [
+            {
+                "step": "1. Keşif & Planlama",
+                "description": "Vizyonunuzu, hedeflerinizi ve hedef kitlenizi ayrıntılı olarak analiz ederek başlıyoruz. Bu aşamada proje kapsamını tanımlar ve ayrıntılı bir yol haritası oluştururuz."
+            },
+            {
+                "step": "2. Tasarım & Prototipleme",
+                "description": "Kullanıcı deneyimini ve işlevselliği görselleştirmek için tel çerçeveler ve etkileşimli prototipler oluşturuyoruz. Bu yinelemeli süreç sezgisel bir tasarımı garanti eder."
+            },
+            {
+                "step": "3. Geliştirme & Test",
+                "description": "Geliştiricilerimiz en son teknolojileri kullanarak projenizi hayata geçirir. Kapsamlı testler yaparak sorunsuz ve hatasız bir kullanıcı deneyimi sağlarız."
+            },
+            {
+                "step": "4. Yayınlama & Lansman",
+                "description": "Başarılı testlerin ardından web siteniz yayına alınır. Optimum performans sağlamak için sürekli destek ve bakım hizmeti sunuyoruz."
+            }
+        ]
+    },
+    "footer": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "portfolio": "Portföy",
+        "contact": "İletişim",
+        "terms": "Kullanım Koşulları",
+        "privacy": "Gizlilik Politikası",
+        "copyright": "© 2025 ai.webkraft. Tüm hakları saklıdır."
+    }
+}

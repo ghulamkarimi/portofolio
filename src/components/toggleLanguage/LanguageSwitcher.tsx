@@ -7,6 +7,7 @@ const languages = [
   { code: "de", label: "Deutsch", flag: "/de.png" },
   { code: "fa", label: "فارسی", flag: "/ir.png" },
   { code: "ar", label: "العربية", flag: "/ar.png" },
+  { code: "tr", label: "Türkçe", flag: "/tr.png" },
 ];
 
 const LanguageSwitcher = () => {
