@@ -94,7 +94,7 @@ const Header = () => {
             type="email"
           />
           <button
-            className="btn w-36"
+            className="btn "
             style={{ backgroundColor: buttonColor }}
           >
             {t("signupButton")}
