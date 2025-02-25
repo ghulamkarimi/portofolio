@@ -1,129 +1,155 @@
 {
-    "titlePart1": "Transform Your",
-    "titlePart2": "Vision",
-    "titlePart3": "into Reality",
-    "description": "Creative and tailored web solutions with Next.js, React, and TypeScript. We seamlessly integrate backend and frontend, leverage AI and automation, and create secure, scalable digital experiences. Let's build something great together!",
-    "emailPlaceholder": "Enter your email",
-    "signupButton": "Sign up",
-    "termsMessage": "By signing up, you agree to our",
-    "termsConditions": "Terms and Conditions",
-    "and": "and",
-    "privacyPolicy": "Privacy Policy",
-    "menu": {
-        "home": "Home",
-        "about": "About",
-        "services": "Services",
-        "portfolio": "Portfolio",
-        "contact": "Contact",
-        "contactUs": "Contact"
+  "titlePart1": "Transform Your",
+  "titlePart2": "Vision",
+  "titlePart3": "into Reality",
+  "description": "Creative and tailored web solutions with Next.js, React, and TypeScript. We seamlessly integrate backend and frontend, leverage AI and automation, and create secure, scalable digital experiences. Let's build something great together!",
+  "emailPlaceholder": "Enter your email",
+  "signupButton": "Sign up",
+  "termsMessage": "By signing up, you agree to our",
+  "termsConditions": "Terms and Conditions",
+  "and": "and",
+  "privacyPolicy": "Privacy Policy",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "contactUs": "Contact"
+  },
+  "about": {
+    "title": "ai-webkraft",
+    "description": "At ai-webkraft, we specialize in delivering high-quality web development solutions that empower businesses and create exceptional user experiences. Our team is committed to innovation and collaboration.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "We provide tailored web solutions that help businesses grow and enhance their digital presence.",
+    "valuesTitle": "Our Values",
+    "valuesDescription": "Our core values include Innovation, Quality, Collaboration, and Integrity. These principles guide our work and ensure the highest standards in every project.",
+    "teamTitle": "Meet the Team",
+    "teamDescription": "Our talented team consists of experienced developers and designers who create modern, functional web solutions."
+  },
+  "services": {
+    "customWebsiteDesign": {
+      "title": "Custom Website Design",
+      "description": "We specialize in creating visually appealing and functional websites tailored to your brand's identity and goals."
     },
-    "about": {
-        "title": "ai.webkraft",
-        "description": "At ai.webkraft, we specialize in delivering high-quality web development solutions that empower businesses and create exceptional user experiences. Our team is committed to innovation and collaboration.",
-        "missionTitle": "Our Mission",
-        "missionDescription": "We provide tailored web solutions that help businesses grow and enhance their digital presence.",
-        "valuesTitle": "Our Values",
-        "valuesDescription": "Our core values include Innovation, Quality, Collaboration, and Integrity. These principles guide our work and ensure the highest standards in every project.",
-        "teamTitle": "Meet the Team",
-        "teamDescription": "Our talented team consists of experienced developers and designers who create modern, functional web solutions."
+    "applicationDevelopment": {
+      "title": "Application Development",
+      "description": "Our team develops robust applications that enhance user engagement and streamline business operations across various platforms."
     },
-    "services": {
-        "customWebsiteDesign": {
-            "title": "Custom Website Design",
-            "description": "We specialize in creating visually appealing and functional websites tailored to your brand's identity and goals."
-        },
-        "applicationDevelopment": {
-            "title": "Application Development",
-            "description": "Our team develops robust applications that enhance user engagement and streamline business operations across various platforms."
-        },
-        "ecommerceSolutions": {
-            "title": "E-commerce Solutions",
-            "description": "We offer comprehensive e-commerce solutions, ensuring secure transactions and a seamless shopping experience for your customers."
-        },
-        "responsiveDesign": {
-            "title": "Responsive Design",
-            "description": "We ensure your website looks great and functions perfectly on all devices, providing an optimal user experience everywhere."
-        }
+    "ecommerceSolutions": {
+      "title": "E-commerce Solutions",
+      "description": "We offer comprehensive e-commerce solutions, ensuring secure transactions and a seamless shopping experience for your customers."
     },
-    "projects": {
-        "title": "Our Projects",
-        "description": "Explore our diverse portfolio that showcases our expertise in web development, from e-commerce solutions to stunning personal websites.",
-        "list": [
-            {
-                "name": "Fashionista Co.",
-                "type": "E-commerce Website"
-            },
-            {
-                "name": "John Doe Photography",
-                "type": "Portfolio Website"
-            },
-            {
-                "name": "Tech Innovators Inc.",
-                "type": "Corporate Website"
-            }
-        ],
-        "categories": [
-            {
-                "title": "E-commerce",
-                "subcategories": [
-                    "Fashion"
-                ]
-            },
-            {
-                "title": "Corporate",
-                "subcategories": [
-                    "Tech Startup"
-                ]
-            },
-            {
-                "title": "Photography",
-                "subcategories": [
-                    "Portfolio"
-                ]
-            },
-            {
-                "title": "Innovative",
-                "subcategories": [
-                    "Solutions"
-                ]
-            }
-        ]
-    },
-    "techStack": {
-        "title": "Technology Stack",
-        "description": "We rely on modern and powerful technologies to deliver high-quality web solutions.",
-        "languages": "Languages",
-        "frameworks": "Frameworks",
-        "additionalTechnologies": "Additional Technologies",
-        "portfolioButton": "View Portfolio",
-        "processTitle": "Our Web Development Process",
-        "processDescription": "A structured approach for top-tier results – from the initial consultation to the final launch.",
-        "processSteps": [
-            {
-                "step": "1. Discovery & Planning",
-                "description": "We start with a thorough analysis of your vision, goals, and target audience. During this phase, we define the project scope and create a detailed roadmap."
-            },
-            {
-                "step": "2. Design & Prototyping",
-                "description": "We create wireframes and interactive prototypes to visualize the user experience and functionality. This iterative process ensures an intuitive design."
-            },
-            {
-                "step": "3. Development & Testing",
-                "description": "Our developers implement your project using the latest technologies. Through extensive testing, we ensure a smooth and error-free user experience."
-            },
-            {
-                "step": "4. Deployment & Launch",
-                "description": "After successful testing, your website goes live. We provide ongoing support and maintenance to ensure optimal performance."
-            }
-        ]
-    },
-    "footer": {
-        "home": "Home",
-        "about": "About",
-        "portfolio": "Portfolio",
-        "contact": "Contact",
-        "terms": "Terms and Conditions",
-        "privacy": "Privacy Policy",
-        "copyright": "© 2025 ai.webkraft. All rights reserved."
+    "responsiveDesign": {
+      "title": "Responsive Design",
+      "description": "We ensure your website looks great and functions perfectly on all devices, providing an optimal user experience everywhere."
     }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "Explore our diverse portfolio that showcases our expertise in web development, from e-commerce solutions to stunning personal websites.",
+    "list": [
+      {
+        "name": "Fashionista Co.",
+        "type": "E-commerce Website"
+      },
+      {
+        "name": "John Doe Photography",
+        "type": "Portfolio Website"
+      },
+      {
+        "name": "Tech Innovators Inc.",
+        "type": "Corporate Website"
+      }
+    ],
+    "categories": [
+      {
+        "title": "E-commerce",
+        "subcategories": ["Fashion"]
+      },
+      {
+        "title": "Corporate",
+        "subcategories": ["Tech Startup"]
+      },
+      {
+        "title": "Photography",
+        "subcategories": ["Portfolio"]
+      },
+      {
+        "title": "Innovative",
+        "subcategories": ["Solutions"]
+      }
+    ]
+  },
+  "techStack": {
+    "title": "Technology Stack",
+    "description": "We rely on modern and powerful technologies to deliver high-quality web solutions.",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "additionalTechnologies": "Additional Technologies",
+    "portfolioButton": "View Portfolio",
+    "processTitle": "Our Web Development Process",
+    "processDescription": "A structured approach for top-tier results – from the initial consultation to the final launch.",
+    "processSteps": [
+      {
+        "step": "1. Discovery & Planning",
+        "description": "We start with a thorough analysis of your vision, goals, and target audience. During this phase, we define the project scope and create a detailed roadmap."
+      },
+      {
+        "step": "2. Design & Prototyping",
+        "description": "We create wireframes and interactive prototypes to visualize the user experience and functionality. This iterative process ensures an intuitive design."
+      },
+      {
+        "step": "3. Development & Testing",
+        "description": "Our developers implement your project using the latest technologies. Through extensive testing, we ensure a smooth and error-free user experience."
+      },
+      {
+        "step": "4. Deployment & Launch",
+        "description": "After successful testing, your website goes live. We provide ongoing support and maintenance to ensure optimal performance."
+      }
+    ]
+  },
+  "footer": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2025 ai-webkraft. All rights reserved."
+  },
+  "meetteam": {
+    "meetTheTeam": "Meet the Team Behind",
+    "teamDescription": "ai-webcraft is led by a team of passionate developers dedicated to delivering exceptional web solutions."
+  },
+
+  "team": [
+    {
+      "name": "Ghulam Karimi",
+      "role": "Software Developer",
+      "description": "Ghulam, our Software Developer, is dedicated to building scalable and high-performance web applications. With a passion for innovation, he ensures that every project is both functional and visually appealing.",
+      "icon": "Code"
+    },
+    {
+      "name": "Khalil Hoauas",
+      "role": "Software Developer",
+      "description": "Khalil, our Software Developer, specializes in crafting efficient and user-friendly web applications. His expertise in modern web technologies allows him to create solutions that drive success.",
+      "icon": "Code"
+    },
+    {
+      "name": "Our Achievements",
+      "role": "",
+      "description": "ai-webraft specializes in developing innovative and user-friendly web solutions. Our expertise in modern web technologies enables us to create projects that stand out for their efficiency, quality, and exceptional user experience.",
+      "icon": "Trophy"
+    }
+  ],
+  "techSta": {
+    "title": "Mastering Web Development Technologies",
+    "description": "At DevCraft, we excel in utilizing cutting-edge technologies to build responsive and user-centric web solutions. Our expertise spans across various programming languages, frameworks, and tools, ensuring that each project is crafted with precision and innovation.",
+    "languagesTitle": "Languages",
+    "frameworksTitle": "Frameworks",
+    "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
+    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
+  }
+  
 }

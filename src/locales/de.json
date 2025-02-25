@@ -1,129 +1,156 @@
 {
-    "titlePart1": "Verwandle deine",
-    "titlePart2": "Vision",
-    "titlePart3": "in Realität",
-    "description": "Kreative und maßgeschneiderte Weblösungen mit Next.js, React und TypeScript. Wir verbinden Backend und Frontend nahtlos, setzen auf KI und Automatisierung und schaffen sichere, skalierbare digitale Erlebnisse. Lassen Sie uns gemeinsam Großartiges erschaffen!",
-    "emailPlaceholder": "Gib deine E-Mail ein",
-    "signupButton": "Anmelden",
-    "termsMessage": "Mit der Anmeldung stimmen Sie unseren",
-    "termsConditions": "Nutzungsbedingungen",
-    "and": "und",
-    "privacyPolicy": "Datenschutzbestimmungen",
-    "menu": {
-        "home": "Startseite",
-        "about": "Über uns",
-        "services": "Dienstleistungen",
-        "portfolio": "Portfolio",
-        "contact": "Kontakt",
-        "contactUs": "Kontakt"
+  "titlePart1": "Verwandle deine",
+  "titlePart2": "Vision",
+  "titlePart3": "in Realität",
+  "description": "Kreative und maßgeschneiderte Weblösungen mit Next.js, React und TypeScript. Wir verbinden Backend und Frontend nahtlos, setzen auf KI und Automatisierung und schaffen sichere, skalierbare digitale Erlebnisse. Lassen Sie uns gemeinsam Großartiges erschaffen!",
+  "emailPlaceholder": "Gib deine E-Mail ein",
+  "signupButton": "Anmelden",
+  "termsMessage": "Mit der Anmeldung stimmen Sie unseren",
+  "termsConditions": "Nutzungsbedingungen",
+  "and": "und",
+  "privacyPolicy": "Datenschutzbestimmungen",
+  "menu": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "contactUs": "Kontakt"
+  },
+  "about": {
+    "title": "ai-webkraft",
+    "description": "Bei ai-webkraft sind wir spezialisiert auf die Bereitstellung hochwertiger Webentwicklungslösungen, die Unternehmen stärken und außergewöhnliche Benutzererlebnisse schaffen. Unser Team ist engagiert für Innovation und Zusammenarbeit.",
+    "missionTitle": "Unsere Mission",
+    "missionDescription": "Wir bieten maßgeschneiderte Weblösungen, die Unternehmen beim Wachstum und der Verbesserung ihrer digitalen Präsenz unterstützen.",
+    "valuesTitle": "Unsere Werte",
+    "valuesDescription": "Unsere Kernwerte umfassen Innovation, Qualität, Zusammenarbeit und Integrität. Diese Prinzipien leiten unsere Arbeit und gewährleisten höchste Standards in jedem Projekt.",
+    "teamTitle": "Unser Team",
+    "teamDescription": "Unser talentiertes Team besteht aus erfahrenen Entwicklern und Designern, die moderne, funktionale Weblösungen erstellen."
+  },
+  "services": {
+    "customWebsiteDesign": {
+      "title": "Individuelles Webdesign",
+      "description": "Wir sind darauf spezialisiert, visuell ansprechende und funktionale Websites zu erstellen, die auf die Identität und Ziele Ihrer Marke zugeschnitten sind."
     },
-    "about": {
-        "title": "ai.webkraft",
-        "description": "Bei ai.webkraft sind wir spezialisiert auf die Bereitstellung hochwertiger Webentwicklungslösungen, die Unternehmen stärken und außergewöhnliche Benutzererlebnisse schaffen. Unser Team ist engagiert für Innovation und Zusammenarbeit.",
-        "missionTitle": "Unsere Mission",
-        "missionDescription": "Wir bieten maßgeschneiderte Weblösungen, die Unternehmen beim Wachstum und der Verbesserung ihrer digitalen Präsenz unterstützen.",
-        "valuesTitle": "Unsere Werte",
-        "valuesDescription": "Unsere Kernwerte umfassen Innovation, Qualität, Zusammenarbeit und Integrität. Diese Prinzipien leiten unsere Arbeit und gewährleisten höchste Standards in jedem Projekt.",
-        "teamTitle": "Unser Team",
-        "teamDescription": "Unser talentiertes Team besteht aus erfahrenen Entwicklern und Designern, die moderne, funktionale Weblösungen erstellen."
+    "applicationDevelopment": {
+      "title": "Anwendungsentwicklung",
+      "description": "Unser Team entwickelt robuste Anwendungen, die das Nutzererlebnis verbessern und Geschäftsprozesse auf verschiedenen Plattformen optimieren."
     },
-    "services": {
-        "customWebsiteDesign": {
-            "title": "Individuelles Webdesign",
-            "description": "Wir sind darauf spezialisiert, visuell ansprechende und funktionale Websites zu erstellen, die auf die Identität und Ziele Ihrer Marke zugeschnitten sind."
-        },
-        "applicationDevelopment": {
-            "title": "Anwendungsentwicklung",
-            "description": "Unser Team entwickelt robuste Anwendungen, die das Nutzererlebnis verbessern und Geschäftsprozesse auf verschiedenen Plattformen optimieren."
-        },
-        "ecommerceSolutions": {
-            "title": "E-Commerce-Lösungen",
-            "description": "Wir bieten umfassende E-Commerce-Lösungen, die sichere Transaktionen und ein nahtloses Einkaufserlebnis für Ihre Kunden gewährleisten."
-        },
-        "responsiveDesign": {
-            "title": "Responsives Design",
-            "description": "Wir stellen sicher, dass Ihre Website auf allen Geräten großartig aussieht und perfekt funktioniert, um überall eine optimale Benutzererfahrung zu bieten."
-        }
+    "ecommerceSolutions": {
+      "title": "E-Commerce-Lösungen",
+      "description": "Wir bieten umfassende E-Commerce-Lösungen, die sichere Transaktionen und ein nahtloses Einkaufserlebnis für Ihre Kunden gewährleisten."
     },
-    "projects": {
-        "title": "Unsere Projekte",
-        "description": "Entdecken Sie unser vielfältiges Portfolio, das unsere Expertise in der Webentwicklung zeigt, von E-Commerce-Lösungen bis hin zu beeindruckenden persönlichen Websites.",
-        "list": [
-            {
-                "name": "Fashionista Co.",
-                "type": "E-Commerce Website"
-            },
-            {
-                "name": "John Doe Fotografie",
-                "type": "Portfolio Website"
-            },
-            {
-                "name": "Tech Innovators GmbH",
-                "type": "Unternehmenswebsite"
-            }
-        ],
-        "categories": [
-            {
-                "title": "E-Commerce",
-                "subcategories": [
-                    "Mode"
-                ]
-            },
-            {
-                "title": "Unternehmen",
-                "subcategories": [
-                    "Tech-Startup"
-                ]
-            },
-            {
-                "title": "Fotografie",
-                "subcategories": [
-                    "Portfolio"
-                ]
-            },
-            {
-                "title": "Innovativ",
-                "subcategories": [
-                    "Lösungen"
-                ]
-            }
-        ]
-    },
-    "techStack": {
-        "title": "Technologie-Stack",
-        "description": "Wir setzen auf moderne und leistungsstarke Technologien, um qualitativ hochwertige Weblösungen zu liefern.",
-        "languages": "Programmiersprachen",
-        "frameworks": "Frameworks",
-        "additionalTechnologies": "Zusätzliche Technologien",
-        "portfolioButton": "Portfolio ansehen",
-        "processTitle": "Unser Webentwicklungsprozess",
-        "processDescription": "Ein strukturierter Ansatz für erstklassige Ergebnisse – von der ersten Beratung bis zum finalen Launch.",
-        "processSteps": [
-            {
-                "step": "1. Analyse & Planung",
-                "description": "Wir beginnen mit einer gründlichen Analyse Ihrer Vision, Ziele und Zielgruppe. In dieser Phase definieren wir den Projektumfang und erstellen eine detaillierte Roadmap."
-            },
-            {
-                "step": "2. Design & Prototyping",
-                "description": "Wir erstellen Wireframes und interaktive Prototypen, um die Benutzererfahrung und Funktionalität zu visualisieren. Dieser iterative Prozess gewährleistet ein intuitives Design."
-            },
-            {
-                "step": "3. Entwicklung & Tests",
-                "description": "Unsere Entwickler setzen Ihr Projekt mit den neuesten Technologien um. Durch umfangreiche Tests stellen wir eine reibungslose und fehlerfreie Benutzererfahrung sicher."
-            },
-            {
-                "step": "4. Bereitstellung & Live-Schaltung",
-                "description": "Nach erfolgreichen Tests wird Ihre Website live geschaltet. Wir bieten fortlaufenden Support und Wartung, um eine optimale Performance zu gewährleisten."
-            }
-        ]
-    },
-    "footer": {
-        "home": "Startseite",
-        "about": "Über uns",
-        "portfolio": "Portfolio",
-        "contact": "Kontakt",
-        "terms": "Nutzungsbedingungen",
-        "privacy": "Datenschutzbestimmungen",
-        "copyright": "© 2025 ai.webkraft. Alle Rechte vorbehalten."
+    "responsiveDesign": {
+      "title": "Responsives Design",
+      "description": "Wir stellen sicher, dass Ihre Website auf allen Geräten großartig aussieht und perfekt funktioniert, um überall eine optimale Benutzererfahrung zu bieten."
     }
+  },
+  "projects": {
+    "title": "Unsere Projekte",
+    "description": "Entdecken Sie unser vielfältiges Portfolio, das unsere Expertise in der Webentwicklung zeigt, von E-Commerce-Lösungen bis hin zu beeindruckenden persönlichen Websites.",
+    "list": [
+      {
+        "name": "Fashionista Co.",
+        "type": "E-Commerce Website"
+      },
+      {
+        "name": "John Doe Fotografie",
+        "type": "Portfolio Website"
+      },
+      {
+        "name": "Tech Innovators GmbH",
+        "type": "Unternehmenswebsite"
+      }
+    ],
+    "categories": [
+      {
+        "title": "E-Commerce",
+        "subcategories": ["Mode"]
+      },
+      {
+        "title": "Unternehmen",
+        "subcategories": ["Tech-Startup"]
+      },
+      {
+        "title": "Fotografie",
+        "subcategories": ["Portfolio"]
+      },
+      {
+        "title": "Innovativ",
+        "subcategories": ["Lösungen"]
+      }
+    ]
+  },
+  "techStack": {
+    "title": "Technologie-Stack",
+    "description": "Wir setzen auf moderne und leistungsstarke Technologien, um qualitativ hochwertige Weblösungen zu liefern.",
+    "languages": "Programmiersprachen",
+    "frameworks": "Frameworks",
+    "additionalTechnologies": "Zusätzliche Technologien",
+    "portfolioButton": "Portfolio ansehen",
+    "processTitle": "Unser Webentwicklungsprozess",
+    "processDescription": "Ein strukturierter Ansatz für erstklassige Ergebnisse – von der ersten Beratung bis zum finalen Launch.",
+    "processSteps": [
+      {
+        "step": "1. Analyse & Planung",
+        "description": "Wir beginnen mit einer gründlichen Analyse Ihrer Vision, Ziele und Zielgruppe. In dieser Phase definieren wir den Projektumfang und erstellen eine detaillierte Roadmap."
+      },
+      {
+        "step": "2. Design & Prototyping",
+        "description": "Wir erstellen Wireframes und interaktive Prototypen, um die Benutzererfahrung und Funktionalität zu visualisieren. Dieser iterative Prozess gewährleistet ein intuitives Design."
+      },
+      {
+        "step": "3. Entwicklung & Tests",
+        "description": "Unsere Entwickler setzen Ihr Projekt mit den neuesten Technologien um. Durch umfangreiche Tests stellen wir eine reibungslose und fehlerfreie Benutzererfahrung sicher."
+      },
+      {
+        "step": "4. Bereitstellung & Live-Schaltung",
+        "description": "Nach erfolgreichen Tests wird Ihre Website live geschaltet. Wir bieten fortlaufenden Support und Wartung, um eine optimale Performance zu gewährleisten."
+      }
+    ]
+  },
+  "footer": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzbestimmungen",
+    "copyright": "© 2025 ai-webkraft. Alle Rechte vorbehalten."
+  },
+  "meetteam": {
+    "meetTheTeam": "Treffen Sie das Team hinter",
+    "teamDescription": "ai-webcraft wird von einem Team leidenschaftlicher Entwickler geleitet, die außergewöhnliche Weblösungen liefern."
+  },
+
+  "team": [
+    {
+      "name": "Ghulam Karimi",
+      "role": "Software-Entwickler",
+      "description": "Ghulam, unser Softwareentwickler, widmet sich dem Aufbau skalierbarer und leistungsstarker Webanwendungen. Mit einer Leidenschaft für Innovation stellt er sicher, dass jedes Projekt sowohl funktional als auch visuell ansprechend ist.",
+      "icon": "Code"
+    },
+    {
+      "name": "Khalil Hoauas",
+      "role": "Software-Entwickler",
+      "description": "Khalil, unser Softwareentwickler, spezialisiert sich auf die Entwicklung effizienter und benutzerfreundlicher Webanwendungen. Seine Expertise in modernen Webtechnologien ermöglicht es ihm, Lösungen zu schaffen, die Erfolg bringen.",
+      "icon": "Code"
+    },
+    {
+      "name": "Unsere Erfolge",
+      "role": "",
+      "description": "ai-webraft, unser führendes Webentwicklungsunternehmen, spezialisiert sich auf die Umsetzung innovativer und qualitativ hochwertiger Weblösungen. Durch den Einsatz modernster Technologien und bewährter Entwicklungsprozesse stellen wir sicher, dass unsere Projekte effizient, benutzerfreundlich und auf langfristigen Erfolg ausgerichtet sind.",
+      "icon": "Trophy"
+    }
+  ],
+
+  "techSta": {
+    "title": "Beherrschung moderner Web-Technologien",
+    "description": "Bei DevCraft setzen wir modernste Technologien ein, um reaktionsschnelle und benutzerzentrierte Weblösungen zu entwickeln. Unsere Expertise umfasst verschiedene Programmiersprachen, Frameworks und Tools, sodass jedes Projekt mit Präzision und Innovation umgesetzt wird.",
+    "languagesTitle": "Programmiersprachen",
+    "frameworksTitle": "Frameworks",
+    "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
+    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
+  }
+
 }

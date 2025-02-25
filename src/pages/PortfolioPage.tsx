@@ -1,7 +1,9 @@
+import ProjectShowcase from "../components/projects/ProjectShowcase";
+
 const PortfolioPage = () => {
     return (
         <div>
-            portfolio page
+            <ProjectShowcase />
         </div>
     );
 }

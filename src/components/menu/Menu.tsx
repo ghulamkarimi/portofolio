@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <div className="w-full">
       <div className="flex items-center justify-center gap-4 p-4">
-        <h1 className="text-2xl font-bold">ai.webkraft</h1>
+        <h1 className="text-2xl font-bold">ai-webkraft</h1>
 
         <ul className="flex gap-3 items-center p-3 font-bold">
           <li className="hover:text-blue-400 cursor-pointer transition-all duration-300 ease-in-out">

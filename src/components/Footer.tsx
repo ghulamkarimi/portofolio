@@ -1,26 +1,27 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../feature/store";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next"; // Import i18next
 
 const Footer = () => {
   const { isDesktop } = useSelector((state: RootState) => state.mode);
-  const { t } = useTranslation(); // useTranslation Hook für Mehrsprachigkeit
+  const { t } = useTranslation();
+  const { lang } = useParams(); // useTranslation Hook für Mehrsprachigkeit
 
   return (
     <footer className="text-white bg-black px-6 py-8 md:px-12 lg:px-32">
       <ul className="flex justify-center gap-6 text-sm">
         <li className="hover:underline">
-          <NavLink to="/">{t("footer.home")}</NavLink>
+        <NavLink to={`/${lang}/`}>{t("menu.home")}</NavLink>
         </li>
         <li className="hover:underline">
-          <NavLink to="/about">{t("footer.about")}</NavLink>
+        <NavLink to={`/${lang}/about`}>{t("menu.about")}</NavLink>
         </li>
         <li className="hover:underline">
-          <NavLink to="/portfolio">{t("footer.portfolio")}</NavLink>
+        <NavLink to={`/${lang}/portfolio`}>{t("menu.portfolio")}</NavLink>
         </li>
         <li className="hover:underline">
-          <NavLink to="/contact">{t("footer.contact")}</NavLink>
+        <NavLink to={`/${lang}/contact`}>{t("menu.contact")}</NavLink>
         </li>
       </ul>
 

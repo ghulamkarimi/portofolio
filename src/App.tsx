@@ -42,7 +42,7 @@ const App = () => {
             : "hidden"
         }`}
       >
-        <h1 className="text-xl font-bold">ai.webkraft</h1>
+        <h1 className="text-xl font-bold">ai-webkraft</h1>
         <ModeToggle />
       </header>
       <div className="border border-b-1" />
