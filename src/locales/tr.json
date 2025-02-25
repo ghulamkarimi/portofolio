@@ -150,6 +150,78 @@
     "frameworksTitle": "Framework'ler",
     "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
     "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
-  }
- 
+  },
+
+  "projectShowCase": [
+    {
+      "name": "A und O Auto-Service",
+      "type": "Dijital Araç Servis Platformu",
+      "description": "AundoAutoService projesi, oto tamir hizmetleri, randevu rezervasyonları ve muhtemelen araç kiralama veya satışı için bir hizmet platformunun birleşimidir.",
+      "image": "/pc.png",
+      "url": "https://aundoautoservice.de/",
+      "date": "Ocak 2025",
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+        "JavaScript",
+        "Express"
+      ]
+    },
+    {
+      "name": "Crypto currency",
+      "type": "Kripto Para Web Sitesi",
+      "description": "Kripto para web sitesi, çeşitli kripto paralar, güncel piyasa verileri ve ticaret platformları hakkında bilgiler sunar. Kullanıcı dostu bir tasarım ve gerçek zamanlı verilerle, web sitesi kripto para piyasasının kapsamlı bir görünümünü sağlar.",
+      "image": "/ipad.png",
+      "date": "Temmuz 2024",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://cryptocurrency.com/"
+    },
+    {
+      "name": "Climber Fashion",
+      "type": "E-Ticaret Web Sitesi",
+      "description": "Climber Fashion e-ticaret web sitesi, geniş bir açık hava giyim ve ekipman yelpazesi sunar. Kullanıcı dostu tasarım ve sezgisel gezinme ile web sitesi, açık hava meraklıları için sorunsuz bir alışveriş deneyimi sağlar.",
+      "image": "/climber.png",
+      "date": "Eylül 2024",
+      "tech": [
+        "Next.js",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://climberfashion.com/"
+    },
+    {
+      "name": "Chat App",
+      "type": "Sohbet Uygulaması",
+      "description": "Sohbet uygulaması, arkadaşlarınız ve iş arkadaşlarınızla güvenli ve kullanıcı dostu bir iletişim platformu sunar. Sezgisel kullanıcı arayüzü ve modern özellikleri ile uygulama, kesintisiz gerçek zamanlı iletişim sağlar.",
+      "image": "/chat.png",
+      "date": "Kasım 2024",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "socket.io",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://chatapp.com/"
+    }
+  ]
 }

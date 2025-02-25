@@ -150,6 +150,44 @@
     "frameworksTitle": "Frameworks",
     "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
     "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
-  }
-  
+  },
+
+  "projectShowCase": [
+    {
+      "name": "A und O Auto-Service",
+      "type": "Digital Auto-Service Platform",
+      "description": "The AundoAutoService project is a combination of a service platform for car workshop services, appointment bookings, and possibly car rental or sales.",
+      "image": "/pc.png",
+      "url": "https://aundoautoservice.de/",
+      "date": "Januar 2025",
+      "tech": ["React", "Next.js","Node.js", "MongoDB", "TailwindCSS", "TypeScript", "JavaScript", "Express"]
+    },
+    {
+      "name": "Crypto currency",
+      "type": "Cryptocurrency Website",
+      "description": "The cryptocurrency website provides information on various cryptocurrencies, current market data, and trading platforms. With a user-friendly design and real-time data, the website offers a comprehensive overview of the cryptocurrency market.",
+      "image": "/ipad.png",
+      "date": "Juli 2024",
+      "tech": ["React", "Redux","Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
+      "url": "https://cryptocurrency.com/"
+    },
+    {
+      "name": "Climber Fashion",
+      "type": "E-Commerce Website",
+      "description": "The Climber Fashion e-commerce website offers a wide range of outdoor clothing and gear. With a user-friendly design and intuitive navigation, the website provides a seamless shopping experience for outdoor enthusiasts.",
+      "image": "/climber.png",
+      "date": "September 2024",
+      "tech": ["Next.js", "Redux","Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
+      "url": "https://climberfashion.com/"
+    },
+    {
+      "name": "Chat App",
+      "type": "Chat Application",
+      "description": "The chat app offers a secure and user-friendly platform for communication with friends and colleagues. With an intuitive user interface and modern features, the app enables seamless real-time communication.",
+      "image": "/chat.png",
+      "date": "November 2024",
+      "tech": ["React", "Redux","Redux/toolkit","socket.io" ,"Node.js", "MongoDB", "JavaScript", "Express"],
+      "url": "https://chatapp.com/"
+    }
+  ]
 }

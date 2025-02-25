@@ -148,7 +148,48 @@
     "languagesTitle": "زبان‌های برنامه‌نویسی",
     "frameworksTitle": "فریمورک‌ها",
     "languages": ["جاوااسکریپت", "تایپ‌اسکریپت", "پایتون", "CSS", "HTML"],
-  "frameworks": ["ری‌اکت", "Next.js", "ری‌اکت نیتیو", "انگولار", "جنگو"]
-  }
+    "frameworks": ["ری‌اکت", "Next.js", "ری‌اکت نیتیو", "انگولار", "جنگو"]
+  },
+
+  
+    "projectShowCase": [
+      {
+        "name": "A und O Auto-Service",
+        "type": "پلتفرم دیجیتالی خدمات خودرو",
+        "description": "پروژه AundoAutoService ترکیبی از یک پلتفرم خدماتی برای تعمیرگاه‌های خودرو، رزرو نوبت و احتمالاً اجاره یا فروش خودرو است.",
+        "image": "/pc.png",
+        "url": "https://aundoautoservice.de/",
+        "date": "ژانویه ۲۰۲۵",
+        "tech": ["React", "Next.js", "Node.js", "MongoDB", "TailwindCSS", "TypeScript", "JavaScript", "Express"]
+      },
+      {
+        "name": "Crypto currency",
+        "type": "وب‌سایت ارز دیجیتال",
+        "description": "این وب‌سایت ارز دیجیتال اطلاعاتی در مورد ارزهای مختلف، داده‌های بازار فعلی و پلتفرم‌های معاملاتی ارائه می‌دهد. با طراحی کاربرپسند و داده‌های لحظه‌ای، این وب‌سایت نمایی جامع از بازار ارزهای دیجیتال ارائه می‌کند.",
+        "image": "/ipad.png",
+        "date": "جولای ۲۰۲۴",
+        "tech": ["React", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
+        "url": "https://cryptocurrency.com/"
+      },
+      {
+        "name": "Climber Fashion",
+        "type": "وب‌سایت فروشگاهی",
+        "description": "وب‌سایت فروشگاهی Climber Fashion مجموعه‌ای گسترده از لباس‌های فضای باز و تجهیزات را ارائه می‌دهد. با طراحی کاربرپسند و ناوبری آسان، این وب‌سایت تجربه خریدی یکپارچه برای علاقه‌مندان به طبیعت فراهم می‌کند.",
+        "image": "/climber.png",
+        "date": "سپتامبر ۲۰۲۴",
+        "tech": ["Next.js", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
+        "url": "https://climberfashion.com/"
+      },
+      {
+        "name": "Chat App",
+        "type": "اپلیکیشن چت",
+        "description": "این اپلیکیشن چت یک پلتفرم امن و کاربرپسند برای ارتباط با دوستان و همکاران ارائه می‌دهد. با یک رابط کاربری شهودی و ویژگی‌های مدرن، این اپلیکیشن امکان ارتباط لحظه‌ای را به راحتی فراهم می‌کند.",
+        "image": "/chat.png",
+        "date": "نوامبر ۲۰۲۴",
+        "tech": ["React", "Redux", "Redux/toolkit", "socket.io", "Node.js", "MongoDB", "JavaScript", "Express"],
+        "url": "https://chatapp.com/"
+      }
+    ]
+  
   
 }

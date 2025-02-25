@@ -151,6 +151,78 @@
     "frameworksTitle": "Frameworks",
     "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
     "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
-  }
+  },
 
+  "projectShowCase": [
+    {
+      "name": "A und O Auto-Service",
+      "type": "Digitale Auto-Service-Plattform",
+      "description": "Das AundoAutoService-Projekt ist eine Kombination aus einer Serviceplattform für Autowerkstattleistungen, Terminbuchungen und möglicherweise Autovermietung oder -verkauf.",
+      "image": "/pc.png",
+      "url": "https://aundoautoservice.de/",
+      "date": "Januar 2025",
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+        "JavaScript",
+        "Express"
+      ]
+    },
+    {
+      "name": "Crypto currency",
+      "type": "Krypto-Währungs-Website",
+      "description": "Die Krypto-Währungs-Website bietet Informationen zu verschiedenen Kryptowährungen, aktuellen Marktdaten und Handelsplattformen. Mit einem benutzerfreundlichen Design und Echtzeitdaten bietet die Website eine umfassende Übersicht über den Krypto-Währungsmarkt.",
+      "image": "/ipad.png",
+      "date": "Juli 2024",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://cryptocurrency.com/"
+    },
+    {
+      "name": "Climber Fashion",
+      "type": "E-Commerce-Website",
+      "description": "Die E-Commerce-Website von Climber Fashion bietet eine breite Auswahl an Outdoor-Bekleidung und Ausrüstung. Mit einem benutzerfreundlichen Design und einer intuitiven Navigation bietet die Website ein nahtloses Einkaufserlebnis für Outdoor-Enthusiasten.",
+      "image": "/climber.png",
+      "date": "September 2024",
+      "tech": [
+        "Next.js",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://climberfashion.com/"
+    },
+    {
+      "name": "Chat App",
+      "type": "Chat-Anwendung",
+      "description": "Die Chat-App bietet eine sichere und benutzerfreundliche Plattform für die Kommunikation mit Freunden und Kollegen. Mit einer intuitiven Benutzeroberfläche und modernen Funktionen ermöglicht die App eine nahtlose Kommunikation in Echtzeit.",
+   "image": "/chat.png",
+      "date": "November 2024",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "socket.io",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://chatapp.com/"
+    }
+  ]
 }
