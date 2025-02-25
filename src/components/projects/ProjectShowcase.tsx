@@ -31,7 +31,7 @@ const ProjectShowcase = () => {
         {/* Bildbereich (Rechte Seite auf Desktop) */}
         <div
           className={`w-full flex justify-center bg-slate-300 rounded-xl overflow-hidden ${
-            isDesktop ? "w-1/2" : "mt-8"
+            isDesktop ? "w-1/2" : "h-76"
           }`}
         >
           <img
@@ -44,7 +44,7 @@ const ProjectShowcase = () => {
         {/* Textbereich (Linke Seite auf Desktop) */}
         <div
           className={`w-full text-start ${
-            isDesktop ? "w-1/2 text-left" : "mt-8"
+            isDesktop ? "w-1/2 text-left" : ""
           }`}
         >
           <h3 className="text-2xl font-bold">{t("projects.list.0.name")}</h3>
