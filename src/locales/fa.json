@@ -127,17 +127,19 @@
       "name": "غلام کریمی",
       "role": "توسعه‌دهنده نرم‌افزار",
       "description": "غلام، توسعه‌دهنده نرم‌افزار ما، در ساخت برنامه‌های وب مقیاس‌پذیر و با عملکرد بالا تخصص دارد. با اشتیاق به نوآوری، او اطمینان حاصل می‌کند که هر پروژه هم کاربردی و هم جذاب باشد.",
-      "icon": "Code"
+      "icon": "Code",
+      "image": "/ghulam.png"
     },
     {
       "name": "خلیل هوآس",
       "role": "توسعه‌دهنده نرم‌افزار",
       "description": "خلیل، توسعه‌دهنده نرم‌افزار ما، در ایجاد برنامه‌های وب کارآمد و کاربرپسند تخصص دارد. تخصص او در فناوری‌های وب مدرن به او امکان می‌دهد راه‌حل‌هایی ارائه دهد که موفقیت را هدایت می‌کنند.",
-      "icon": "Code"
+      "icon": "Code",
+        "image":"/khalil.jpg"
     },
     {
       "name": "دستاوردهای ما",
-      "role": "",
+      "role": "ai-webkraft",
       "description": "ai-webraft در توسعه راه‌حل‌های وب نوآورانه و کاربرپسند تخصص دارد. تخصص ما در فناوری‌های وب مدرن به ما امکان می‌دهد پروژه‌هایی را اجرا کنیم که با بهره‌وری، کیفیت و تجربه کاربری برتر شناخته می‌شوند.",
       "icon": "Trophy"
     }
@@ -145,51 +147,106 @@
   "techSta": {
     "title": "تسلط بر فناوری‌های توسعه وب",
     "description": "در DevCraft، ما با استفاده از جدیدترین فناوری‌ها، راه‌حل‌های وب کاربرمحور و واکنش‌گرا ایجاد می‌کنیم. تخصص ما شامل زبان‌های برنامه‌نویسی مختلف، فریمورک‌ها و ابزارهای متنوع است تا هر پروژه با دقت و نوآوری ساخته شود.",
-    "languagesTitle": "زبان‌های برنامه‌نویسی",
-    "frameworksTitle": "فریمورک‌ها",
-    "languages": ["جاوااسکریپت", "تایپ‌اسکریپت", "پایتون", "CSS", "HTML"],
-    "frameworks": ["ری‌اکت", "Next.js", "ری‌اکت نیتیو", "انگولار", "جنگو"]
+    "languagesTitle": "فناوری‌های فرانت‌اند",
+    "frameworksTitle": "فناوری‌های بک‌اند",
+    "languages": [
+      "Node.js",
+      "Nginx (وب‌سرور و پروکسی معکوس)",
+      "MongoDB",
+      "Express",
+      "RESTful APIs",
+      "JWT Authentication (احراز هویت با JWT)",
+      "Express.js",
+      "..."
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Redux & Redux Toolkit (مدیریت وضعیت برای برنامه‌های ری‌اکت)",
+      "Storybook",
+      "..."
+    ]
   },
 
-  
-    "projectShowCase": [
-      {
-        "name": "A und O Auto-Service",
-        "type": "پلتفرم دیجیتالی خدمات خودرو",
-        "description": "پروژه AundoAutoService ترکیبی از یک پلتفرم خدماتی برای تعمیرگاه‌های خودرو، رزرو نوبت و احتمالاً اجاره یا فروش خودرو است.",
-        "image": "/pc.png",
-        "url": "https://aundoautoservice.de/",
-        "date": "ژانویه ۲۰۲۵",
-        "tech": ["React", "Next.js", "Node.js", "MongoDB", "TailwindCSS", "TypeScript", "JavaScript", "Express"]
-      },
-      {
-        "name": "Crypto currency",
-        "type": "وب‌سایت ارز دیجیتال",
-        "description": "این وب‌سایت ارز دیجیتال اطلاعاتی در مورد ارزهای مختلف، داده‌های بازار فعلی و پلتفرم‌های معاملاتی ارائه می‌دهد. با طراحی کاربرپسند و داده‌های لحظه‌ای، این وب‌سایت نمایی جامع از بازار ارزهای دیجیتال ارائه می‌کند.",
-        "image": "/ipad.png",
-        "date": "جولای ۲۰۲۴",
-        "tech": ["React", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://cryptocurrency.com/"
-      },
-      {
-        "name": "Climber Fashion",
-        "type": "وب‌سایت فروشگاهی",
-        "description": "وب‌سایت فروشگاهی Climber Fashion مجموعه‌ای گسترده از لباس‌های فضای باز و تجهیزات را ارائه می‌دهد. با طراحی کاربرپسند و ناوبری آسان، این وب‌سایت تجربه خریدی یکپارچه برای علاقه‌مندان به طبیعت فراهم می‌کند.",
-        "image": "/climber.png",
-        "date": "سپتامبر ۲۰۲۴",
-        "tech": ["Next.js", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://climberfashion.com/"
-      },
-      {
-        "name": "Chat App",
-        "type": "اپلیکیشن چت",
-        "description": "این اپلیکیشن چت یک پلتفرم امن و کاربرپسند برای ارتباط با دوستان و همکاران ارائه می‌دهد. با یک رابط کاربری شهودی و ویژگی‌های مدرن، این اپلیکیشن امکان ارتباط لحظه‌ای را به راحتی فراهم می‌کند.",
-        "image": "/chat.png",
-        "date": "نوامبر ۲۰۲۴",
-        "tech": ["React", "Redux", "Redux/toolkit", "socket.io", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://chatapp.com/"
-      }
-    ]
-  
-  
+  "projectShowCase": [
+    {
+      "name": "A und O Auto-Service",
+      "title": "aundoautoservice",
+      "type": "پلتفرم دیجیتالی خدمات خودرو",
+      "description": "پروژه AundoAutoService ترکیبی از یک پلتفرم خدماتی برای تعمیرگاه‌های خودرو، رزرو نوبت و احتمالاً اجاره یا فروش خودرو است.",
+      "image": "/pc.png",
+      "url": "https://aundoautoservice.de/",
+      "date": "ژانویه ۲۰۲۵",
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+        "JavaScript",
+        "Express"
+      ],
+      "button": "بیشتر بدانید"
+    },
+    {
+      "name": "Crypto currency",
+      "title": "cryptocurrency",
+      "type": "وب‌سایت ارز دیجیتال",
+      "description": "این وب‌سایت ارز دیجیتال اطلاعاتی در مورد ارزهای مختلف، داده‌های بازار فعلی و پلتفرم‌های معاملاتی ارائه می‌دهد. با طراحی کاربرپسند و داده‌های لحظه‌ای، این وب‌سایت نمایی جامع از بازار ارزهای دیجیتال ارائه می‌کند.",
+      "image": "/ipad.png",
+      "date": "جولای ۲۰۲۴",
+      "button": "بیشتر بدانید",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://cryptocurrency.com/"
+    },
+    {
+      "name": "Climber Fashion",
+      "type": "وب‌سایت فروشگاهی",
+      "description": "وب‌سایت فروشگاهی Climber Fashion مجموعه‌ای گسترده از لباس‌های فضای باز و تجهیزات را ارائه می‌دهد. با طراحی کاربرپسند و ناوبری آسان، این وب‌سایت تجربه خریدی یکپارچه برای علاقه‌مندان به طبیعت فراهم می‌کند.",
+      "image": "/climber.png",
+      "date": "سپتامبر ۲۰۲۴",
+      "tech": [
+        "Next.js",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "button": "بیشتر بدانید",
+      "url": "https://climberfashion.com/"
+    },
+    {
+      "name": "Chat App",
+      "title": "chat",
+      "type": "اپلیکیشن چت",
+      "description": "این اپلیکیشن چت یک پلتفرم امن و کاربرپسند برای ارتباط با دوستان و همکاران ارائه می‌دهد. با یک رابط کاربری شهودی و ویژگی‌های مدرن، این اپلیکیشن امکان ارتباط لحظه‌ای را به راحتی فراهم می‌کند.",
+      "image": "/chat.png",
+      "date": "نوامبر ۲۰۲۴",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "socket.io",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://chatapp.com/",
+      "button": "بیشتر بدانید"
+    }
+  ]
 }

@@ -82,11 +82,18 @@ const ProjectShowcase = () => {
               </div>
 
               <button
-                onClick={() => navigate(`/projects/${project.name}`)}
+                onClick={() =>
+                  navigate(
+                    `/${t("lang")}/portfolio/${encodeURIComponent(
+                      project.title
+                    )}`,
+                    { state: project }
+                  )
+                }
                 className="btn mt-4"
                 style={{ backgroundColor: buttonColor }}
               >
-                Mehr erfahren
+                {project.button}
               </button>
             </div>
           </div>

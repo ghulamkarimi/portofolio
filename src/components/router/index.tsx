@@ -4,6 +4,7 @@ import HomePage from "../../pages/HomePage";
 import AboutPage from "../../pages/AboutPage";
 import ContactPage from "../../pages/ContactPage";
 import PortfolioPage from "../../pages/PortfolioPage";
+import ProjectCard from "../../pages/ProjectCard";
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +18,9 @@ export const router = createBrowserRouter([
       { path: "", element: <HomePage /> }, // Startseite
       { path: "about", element: <AboutPage /> }, // Über uns
       { path: "contact", element: <ContactPage /> }, // Kontakt
-      { path: "portfolio", element: <PortfolioPage /> }, // Portfolio
+      { path: "portfolio", element: <PortfolioPage /> },
+      {path: "portfolio/:title", element: <ProjectCard />},
+      // Portfolio
     ],
   },
   { path: "*", element: <div>Not Found</div> }, // Fehlerseite

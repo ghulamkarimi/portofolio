@@ -128,17 +128,19 @@
       "name": "Ghulam Karimi",
       "role": "Software Developer",
       "description": "Ghulam, our Software Developer, is dedicated to building scalable and high-performance web applications. With a passion for innovation, he ensures that every project is both functional and visually appealing.",
-      "icon": "Code"
+      "icon": "Code",
+      "image": "/ghulam.png"
     },
     {
       "name": "Khalil Hoauas",
       "role": "Software Developer",
       "description": "Khalil, our Software Developer, specializes in crafting efficient and user-friendly web applications. His expertise in modern web technologies allows him to create solutions that drive success.",
-      "icon": "Code"
+      "icon": "Code",
+      "image":"/khalil.jpg"
     },
     {
       "name": "Our Achievements",
-      "role": "",
+      "role": "ai-webkraft",
       "description": "ai-webraft specializes in developing innovative and user-friendly web solutions. Our expertise in modern web technologies enables us to create projects that stand out for their efficiency, quality, and exceptional user experience.",
       "icon": "Trophy"
     }
@@ -146,30 +148,69 @@
   "techSta": {
     "title": "Mastering Web Development Technologies",
     "description": "At DevCraft, we excel in utilizing cutting-edge technologies to build responsive and user-centric web solutions. Our expertise spans across various programming languages, frameworks, and tools, ensuring that each project is crafted with precision and innovation.",
-    "languagesTitle": "Languages",
-    "frameworksTitle": "Frameworks",
-    "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
-    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
+    "languagesTitle": "Backend Technologies",
+    "frameworksTitle": "Frontend Technologies",
+    "languages": [
+      "Node.js",
+      "Nginx (Webserver & Reverse Proxy)",
+      "MongoDB",
+      "Express",
+      "RESTful APIs",
+      "JWT Authentication",
+      "Express.js",
+      "MongoDB",
+      "..."
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Redux & Redux Toolkit (State-Management für React-Anwendungen)",
+      "Storybook",
+      "..."
+    ]
   },
 
   "projectShowCase": [
     {
       "name": "A und O Auto-Service",
+      "title": "aundoautoservice",
       "type": "Digital Auto-Service Platform",
       "description": "The AundoAutoService project is a combination of a service platform for car workshop services, appointment bookings, and possibly car rental or sales.",
       "image": "/pc.png",
       "url": "https://aundoautoservice.de/",
       "date": "Januar 2025",
-      "tech": ["React", "Next.js","Node.js", "MongoDB", "TailwindCSS", "TypeScript", "JavaScript", "Express"]
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+        "JavaScript",
+        "Express"
+      ],
+      "button": "Learn More"
     },
     {
       "name": "Crypto currency",
+      "title": "cryptocurrency",
       "type": "Cryptocurrency Website",
       "description": "The cryptocurrency website provides information on various cryptocurrencies, current market data, and trading platforms. With a user-friendly design and real-time data, the website offers a comprehensive overview of the cryptocurrency market.",
       "image": "/ipad.png",
       "date": "Juli 2024",
-      "tech": ["React", "Redux","Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-      "url": "https://cryptocurrency.com/"
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://cryptocurrency.com/",
+      "button": "Learn More"
     },
     {
       "name": "Climber Fashion",
@@ -177,17 +218,37 @@
       "description": "The Climber Fashion e-commerce website offers a wide range of outdoor clothing and gear. With a user-friendly design and intuitive navigation, the website provides a seamless shopping experience for outdoor enthusiasts.",
       "image": "/climber.png",
       "date": "September 2024",
-      "tech": ["Next.js", "Redux","Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-      "url": "https://climberfashion.com/"
+      "tech": [
+        "Next.js",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://climberfashion.com/",
+      "button": "Learn More"
     },
     {
       "name": "Chat App",
+      "title": "chat",
       "type": "Chat Application",
       "description": "The chat app offers a secure and user-friendly platform for communication with friends and colleagues. With an intuitive user interface and modern features, the app enables seamless real-time communication.",
       "image": "/chat.png",
       "date": "November 2024",
-      "tech": ["React", "Redux","Redux/toolkit","socket.io" ,"Node.js", "MongoDB", "JavaScript", "Express"],
-      "url": "https://chatapp.com/"
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "socket.io",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://chatapp.com/",
+      "button": "Learn More"
     }
   ]
 }

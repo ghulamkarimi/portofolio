@@ -128,17 +128,19 @@
       "name": "Ghulam Karimi",
       "role": "Software-Entwickler",
       "description": "Ghulam, unser Softwareentwickler, widmet sich dem Aufbau skalierbarer und leistungsstarker Webanwendungen. Mit einer Leidenschaft für Innovation stellt er sicher, dass jedes Projekt sowohl funktional als auch visuell ansprechend ist.",
-      "icon": "Code"
+      "icon": "Code",
+      "image": "/ghulam.png"
     },
     {
       "name": "Khalil Hoauas",
       "role": "Software-Entwickler",
       "description": "Khalil, unser Softwareentwickler, spezialisiert sich auf die Entwicklung effizienter und benutzerfreundlicher Webanwendungen. Seine Expertise in modernen Webtechnologien ermöglicht es ihm, Lösungen zu schaffen, die Erfolg bringen.",
-      "icon": "Code"
+      "icon": "Code",
+      "image": "/khalil.jpg"
     },
     {
       "name": "Unsere Erfolge",
-      "role": "",
+      "role": "ai-webkraft",
       "description": "ai-webraft, unser führendes Webentwicklungsunternehmen, spezialisiert sich auf die Umsetzung innovativer und qualitativ hochwertiger Weblösungen. Durch den Einsatz modernster Technologien und bewährter Entwicklungsprozesse stellen wir sicher, dass unsere Projekte effizient, benutzerfreundlich und auf langfristigen Erfolg ausgerichtet sind.",
       "icon": "Trophy"
     }
@@ -147,20 +149,51 @@
   "techSta": {
     "title": "Beherrschung moderner Web-Technologien",
     "description": "Bei DevCraft setzen wir modernste Technologien ein, um reaktionsschnelle und benutzerzentrierte Weblösungen zu entwickeln. Unsere Expertise umfasst verschiedene Programmiersprachen, Frameworks und Tools, sodass jedes Projekt mit Präzision und Innovation umgesetzt wird.",
-    "languagesTitle": "Programmiersprachen",
-    "frameworksTitle": "Frameworks",
-    "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
-    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
+    "languagesTitle": "Backend-Technologien",
+    "frameworksTitle": "Frontend-Technologien",
+    "languages": [
+      "Node.js",
+      "Nginx (Webserver & Reverse Proxy)",
+      "MongoDB",
+      "Express",
+      "RESTful APIs",
+      "JWT Authentication",
+      "Express.js",
+      "..."
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Redux & Redux Toolkit (State-Management für React-Anwendungen)",
+      "Storybook",
+      "..."
+    ]
   },
 
   "projectShowCase": [
     {
       "name": "A und O Auto-Service",
+      "title": "aundoautoservice",
       "type": "Digitale Auto-Service-Plattform",
       "description": "Das AundoAutoService-Projekt ist eine Kombination aus einer Serviceplattform für Autowerkstattleistungen, Terminbuchungen und möglicherweise Autovermietung oder -verkauf.",
       "image": "/pc.png",
       "url": "https://aundoautoservice.de/",
       "date": "Januar 2025",
+      "more": [
+        {
+          "client": {
+            "title": "Client",
+            "description": "A und O Auto-Service"
+          },
+
+          "tech": {
+            "title": "Technologien",
+            "description": "React, Next.js, Node.js, MongoDB, TailwindCSS, TypeScript, JavaScript, Express"
+          }
+        }
+      ],
       "tech": [
         "React",
         "Next.js",
@@ -170,10 +203,12 @@
         "TypeScript",
         "JavaScript",
         "Express"
-      ]
+      ],
+      "button": "Mehr erfahren"
     },
     {
       "name": "Crypto currency",
+      "title": "cryptocurrency",
       "type": "Krypto-Währungs-Website",
       "description": "Die Krypto-Währungs-Website bietet Informationen zu verschiedenen Kryptowährungen, aktuellen Marktdaten und Handelsplattformen. Mit einem benutzerfreundlichen Design und Echtzeitdaten bietet die Website eine umfassende Übersicht über den Krypto-Währungsmarkt.",
       "image": "/ipad.png",
@@ -187,10 +222,12 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://cryptocurrency.com/"
+      "url": "https://cryptocurrency.com/",
+      "button": "Mehr erfahren"
     },
     {
       "name": "Climber Fashion",
+      "title": "climberfashion",
       "type": "E-Commerce-Website",
       "description": "Die E-Commerce-Website von Climber Fashion bietet eine breite Auswahl an Outdoor-Bekleidung und Ausrüstung. Mit einem benutzerfreundlichen Design und einer intuitiven Navigation bietet die Website ein nahtloses Einkaufserlebnis für Outdoor-Enthusiasten.",
       "image": "/climber.png",
@@ -204,13 +241,15 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://climberfashion.com/"
+      "url": "https://climberfashion.com/",
+      "button": "Mehr erfahren"
     },
     {
       "name": "Chat App",
+      "title": "chat",
       "type": "Chat-Anwendung",
       "description": "Die Chat-App bietet eine sichere und benutzerfreundliche Plattform für die Kommunikation mit Freunden und Kollegen. Mit einer intuitiven Benutzeroberfläche und modernen Funktionen ermöglicht die App eine nahtlose Kommunikation in Echtzeit.",
-   "image": "/chat.png",
+      "image": "/chat.png",
       "date": "November 2024",
       "tech": [
         "React",
@@ -222,7 +261,8 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://chatapp.com/"
+      "url": "https://chatapp.com/",
+      "button": "Mehr erfahren"
     }
   ]
 }

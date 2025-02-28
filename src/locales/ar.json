@@ -128,17 +128,19 @@
       "name": "غلام كريمي",
       "role": "مطور البرمجيات",
       "description": "غلام، مطور البرمجيات لدينا، مكرس لبناء تطبيقات ويب قابلة للتطوير وعالية الأداء. بشغف للابتكار، يضمن أن يكون كل مشروع وظيفيًا وجذابًا بصريًا.",
-      "icon": "Code"
+      "icon": "Code",
+       "image":"/ghulam.png"
     },
     {
       "name": "خليل هوآس",
       "role": "مطور البرمجيات",
       "description": "خليل، مطور البرمجيات لدينا، متخصص في إنشاء تطبيقات ويب فعالة وسهلة الاستخدام. تتيح له خبرته في تقنيات الويب الحديثة إنشاء حلول تحقق النجاح.",
-      "icon": "Code"
+      "icon": "Code",
+      "image":"/khalil.jpg"
     },
     {
       "name": "إنجازاتنا",
-      "role": "",
+      "role": "ai-webkraft",
       "description": "تتخصص ai-webraft في تطوير حلول ويب مبتكرة وسهلة الاستخدام. تتيح لنا خبرتنا في تقنيات الويب الحديثة تنفيذ مشاريع تتميز بالكفاءة والجودة وتجربة المستخدم الممتازة.",
       "icon": "Trophy"
     }
@@ -146,50 +148,108 @@
   "techSta": {
     "title": "إتقان تقنيات تطوير الويب",
     "description": "في DevCraft، نتميز باستخدام أحدث التقنيات لإنشاء حلول ويب تفاعلية ومركزة على المستخدم. تغطي خبرتنا العديد من لغات البرمجة وإطارات العمل والأدوات، مما يضمن تنفيذ كل مشروع بدقة وابتكار.",
-    "languagesTitle": "لغات البرمجة",
-    "frameworksTitle": "إطارات العمل",
-    "languages": ["جافا سكريبت", "تايب سكريبت", "بايثون", "CSS", "HTML"],
-    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
-  },
-  
-    "projectShowCase": [
-      {
-        "name": "A und O Auto-Service",
-        "type": "منصة رقمية لخدمات السيارات",
-        "description": "مشروع AundoAutoService هو عبارة عن منصة خدمات تجمع بين ورش إصلاح السيارات، حجز المواعيد، وربما تأجير أو بيع السيارات.",
-        "image": "/pc.png",
-        "url": "https://aundoautoservice.de/",
-        "date": "يناير ٢٠٢٥",
-        "tech": ["React", "Next.js", "Node.js", "MongoDB", "TailwindCSS", "TypeScript", "JavaScript", "Express"]
-      },
-      {
-        "name": "Crypto currency",
-        "type": "موقع العملات الرقمية",
-        "description": "يوفر موقع العملات الرقمية معلومات حول مختلف العملات الرقمية، والبيانات السوقية الحالية، ومنصات التداول. بفضل تصميمه السهل الاستخدام والبيانات المحدثة في الوقت الفعلي، يقدم الموقع نظرة شاملة على سوق العملات الرقمية.",
-        "image": "/ipad.png",
-        "date": "يوليو ٢٠٢٤",
-        "tech": ["React", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://cryptocurrency.com/"
-      },
-      {
-        "name": "Climber Fashion",
-        "type": "موقع التجارة الإلكترونية",
-        "description": "يقدم موقع Climber Fashion للتجارة الإلكترونية مجموعة واسعة من الملابس والمعدات الخارجية. مع تصميم سهل الاستخدام وتنقل بسيط، يوفر الموقع تجربة تسوق سلسة لعشاق المغامرات في الهواء الطلق.",
-        "image": "/climber.png",
-        "date": "سبتمبر ٢٠٢٤",
-        "tech": ["Next.js", "Redux", "Redux/toolkit", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://climberfashion.com/"
-      },
-      {
-        "name": "Chat App",
-        "type": "تطبيق الدردشة",
-        "description": "يقدم تطبيق الدردشة منصة آمنة وسهلة الاستخدام للتواصل مع الأصدقاء والزملاء. مع واجهة مستخدم بديهية وميزات حديثة، يتيح التطبيق تواصلاً سلساً وفورياً.",
-        "image": "/chat.png",
-        "date": "نوفمبر ٢٠٢٤",
-        "tech": ["React", "Redux", "Redux/toolkit", "socket.io", "Node.js", "MongoDB", "JavaScript", "Express"],
-        "url": "https://chatapp.com/"
-      }
+    "languagesTitle": " تقنيات الخلفية",
+    "frameworksTitle": "تقنيات الواجهة الأمامية",
+    "languages": [
+      "Node.js",
+      "Nginx (خادم الويب ووكيل عكسي)",
+      "MongoDB",
+      "Express",
+      "RESTful APIs",
+      "JWT Authentication",
+      "Express.js",
+      "MongoDB",
+      "..."
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Redux & Redux Toolkit (إدارة الحالة لتطبيقات React)",
+      "Storybook",
+      "..."
     ]
-  
-  
+  },
+
+  "projectShowCase": [
+    {
+      "name": "A und O Auto-Service",
+      "title": "aundoautoservice",
+      "type": "منصة رقمية لخدمات السيارات",
+      "description": "مشروع AundoAutoService هو عبارة عن منصة خدمات تجمع بين ورش إصلاح السيارات، حجز المواعيد، وربما تأجير أو بيع السيارات.",
+      "image": "/pc.png",
+      "url": "https://aundoautoservice.de/",
+      "date": "يناير ٢٠٢٥",
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+        "JavaScript",
+        "Express"
+      ],
+      "button": " اعرف المزيد"
+    },
+    {
+      "name": "Crypto currency",
+      "title": "cryptocurrency",
+      "type": "موقع العملات الرقمية",
+      "description": "يوفر موقع العملات الرقمية معلومات حول مختلف العملات الرقمية، والبيانات السوقية الحالية، ومنصات التداول. بفضل تصميمه السهل الاستخدام والبيانات المحدثة في الوقت الفعلي، يقدم الموقع نظرة شاملة على سوق العملات الرقمية.",
+      "image": "/ipad.png",
+      "date": "يوليو ٢٠٢٤",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://cryptocurrency.com/",
+      "button": " اعرف المزيد"
+    },
+    {
+      "name": "Climber Fashion",
+      "title": "climberfashion",
+      "type": "موقع التجارة الإلكترونية",
+      "description": "يقدم موقع Climber Fashion للتجارة الإلكترونية مجموعة واسعة من الملابس والمعدات الخارجية. مع تصميم سهل الاستخدام وتنقل بسيط، يوفر الموقع تجربة تسوق سلسة لعشاق المغامرات في الهواء الطلق.",
+      "image": "/climber.png",
+      "date": "سبتمبر ٢٠٢٤",
+      "tech": [
+        "Next.js",
+        "Redux",
+        "Redux/toolkit",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://climberfashion.com/",
+      "button": " اعرف المزيد"
+    },
+    {
+      "name": "Chat App",
+      "title": "chat",
+      "type": "تطبيق الدردشة",
+      "description": "يقدم تطبيق الدردشة منصة آمنة وسهلة الاستخدام للتواصل مع الأصدقاء والزملاء. مع واجهة مستخدم بديهية وميزات حديثة، يتيح التطبيق تواصلاً سلساً وفورياً.",
+      "image": "/chat.png",
+      "date": "نوفمبر ٢٠٢٤",
+      "tech": [
+        "React",
+        "Redux",
+        "Redux/toolkit",
+        "socket.io",
+        "Node.js",
+        "MongoDB",
+        "JavaScript",
+        "Express"
+      ],
+      "url": "https://chatapp.com/",
+      "button": " اعرف المزيد"
+    }
+  ]
 }

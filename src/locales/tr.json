@@ -128,17 +128,19 @@
       "name": "Ghulam Karimi",
       "role": "Yazılım Geliştirici",
       "description": "Ghulam, yazılım geliştiricimiz olarak ölçeklenebilir ve yüksek performanslı web uygulamaları oluşturmaya kendini adamıştır. Yeniliğe olan tutkusu sayesinde her projenin işlevsel ve görsel olarak çekici olmasını sağlar.",
-      "icon": "Code"
+      "icon": "Code",
+      "image": "/ghulam.png"
     },
     {
       "name": "Khalil Hoauas",
       "role": "Yazılım Geliştirici",
       "description": "Khalil, yazılım geliştiricimiz olarak verimli ve kullanıcı dostu web uygulamaları oluşturmada uzmandır. Modern web teknolojilerindeki uzmanlığı, başarılı çözümler oluşturmasını sağlar.",
-      "icon": "Code"
+      "icon": "Code",
+       "image":"/khalil.jpg"
     },
     {
       "name": "Başarılarımız",
-      "role": "",
+      "role": "ai-webkraft",
       "description": "ai-webraft, yenilikçi ve kullanıcı dostu web çözümleri geliştirmeye odaklanmıştır. Modern web teknolojilerindeki uzmanlığımız sayesinde, verimlilik, kalite ve kullanıcı deneyimi açısından üstün projeler hayata geçiriyoruz.",
       "icon": "Trophy"
     }
@@ -146,15 +148,33 @@
   "techSta": {
     "title": "Web Geliştirme Teknolojilerinde Uzmanlık",
     "description": "DevCraft olarak, en son teknolojileri kullanarak duyarlı ve kullanıcı odaklı web çözümleri geliştiriyoruz. Uzmanlığımız, çeşitli programlama dillerini, framework'leri ve araçları kapsar, böylece her proje hassasiyet ve yenilikle oluşturulur.",
-    "languagesTitle": "Programlama Dilleri",
-    "frameworksTitle": "Framework'ler",
-    "languages": ["JavaScript", "TypeScript", "Python", "CSS", "HTML"],
-    "frameworks": ["React", "Next.js", "React Native", "Angular", "Django"]
+    "languagesTitle": "Arka Uç Teknolojileri",
+    "frameworksTitle": "Ön Uç Teknolojileri",
+    "languages": [
+      "Node.js",
+      "Nginx ( Web Sunucusu ve Ters Vekil Sunucu)",
+      "MongoDB",
+      "Express",
+      "RESTful APIs",
+      "JWT Authentication",
+      "Express.js",
+      "..."
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "React Native",
+      "TailwindCSS",
+      "Redux & Redux Toolkit (React Uygulamaları için Durum Yönetimi)",
+      "Storybook",
+      "..."
+    ]
   },
 
   "projectShowCase": [
     {
       "name": "A und O Auto-Service",
+      "title": "aundoautoservice",
       "type": "Dijital Araç Servis Platformu",
       "description": "AundoAutoService projesi, oto tamir hizmetleri, randevu rezervasyonları ve muhtemelen araç kiralama veya satışı için bir hizmet platformunun birleşimidir.",
       "image": "/pc.png",
@@ -169,7 +189,8 @@
         "TypeScript",
         "JavaScript",
         "Express"
-      ]
+      ],
+      "button": " Daha fazla bilgi edinin"
     },
     {
       "name": "Crypto currency",
@@ -186,10 +207,12 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://cryptocurrency.com/"
+      "url": "https://cryptocurrency.com/",
+      "button": " Daha fazla bilgi edinin"
     },
     {
       "name": "Climber Fashion",
+      "title": "climberfashion",
       "type": "E-Ticaret Web Sitesi",
       "description": "Climber Fashion e-ticaret web sitesi, geniş bir açık hava giyim ve ekipman yelpazesi sunar. Kullanıcı dostu tasarım ve sezgisel gezinme ile web sitesi, açık hava meraklıları için sorunsuz bir alışveriş deneyimi sağlar.",
       "image": "/climber.png",
@@ -203,10 +226,12 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://climberfashion.com/"
+      "url": "https://climberfashion.com/",
+      "button": " Daha fazla bilgi edinin"
     },
     {
       "name": "Chat App",
+      "title": "chatapp",
       "type": "Sohbet Uygulaması",
       "description": "Sohbet uygulaması, arkadaşlarınız ve iş arkadaşlarınızla güvenli ve kullanıcı dostu bir iletişim platformu sunar. Sezgisel kullanıcı arayüzü ve modern özellikleri ile uygulama, kesintisiz gerçek zamanlı iletişim sağlar.",
       "image": "/chat.png",
@@ -221,7 +246,8 @@
         "JavaScript",
         "Express"
       ],
-      "url": "https://chatapp.com/"
+      "url": "https://chatapp.com/",
+      "button": " Daha fazla bilgi edinin"
     }
   ]
 }
